@@ -1,0 +1,40 @@
+.mainmenu{
+  text-transform: uppercase;  
+  font-size: 1.2rem;
+  font-family: 'BigNoodleTitling-Regular';
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  margin-bottom: 112px;
+
+  .mainmenu-item {
+    display: inline;
+    padding: 0 25px 0 0;
+    position: relative;
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .mainmenu-item-inactive {
+    cursor: pointer;
+  }
+
+  /* highlight hovered item a bit... */
+  a:hover.mainmenu-item {
+    // font-weight: bold;
+    color: inherit;
+    text-decoration: inherit;
+  }
+  /* ...but not if it is already selected */
+  a:hover.mainmenu-item-active {
+    color: $menuColorActive;
+    text-decoration: inherit;
+  }
+
+  /* needs to be defined after topbar-item */
+  .mainmenu-item-active {
+    // font-weight: bold;
+    color: $menuColorActive;
+    cursor: default;
+  }
+
+}

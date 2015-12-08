@@ -1,0 +1,132 @@
+body {
+  background-color: $backgroundColor;
+  font-size: 1rem;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  padding: 25px;
+}
+h3{
+  margin: 0;
+  padding: 0;
+  // -webkit-margin-before: 0px;
+  // -webkit-margin-after: 0px;
+  // -webkit-margin-start: 0px;
+  // -webkit-margin-end: 0px;
+  font-family: 'BigNoodleTitling-Regular';
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.border{
+  border: 1px solid red;
+}
+.float-right{
+  float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+input {
+  font: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.content {
+  max-width: 925px;
+}
+
+.span-save {
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.margins {
+  margin-top: 2px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.padding {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-top: 2px;
+}
+
+.rounded-box {
+  border-width: 0px;
+  border-radius: 4px;
+}
+
+button {
+  margin: 0em;
+  font: -webkit-small-control;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid ;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #ccc;
+  background-color: #203040;
+  border-color: #102030;
+}
+
+.btn:hover, .btn:focus, .btn:active  {
+  color: #fff;
+  border-color: #102030;
+  background-color: #506070;
+}
+
+.dark-blue-bg {
+  background-color: #203040;
+}
+
+.medium-blue-bg {
+  background-color: #304050;
+}
+
+.text-on-blue {
+  color: #ccc;
+}
+
+.todo-text {
+  height: 200px;
+  background-color: #eee;
+}
+
+.todo-text-edit {
+  width: 97%;
+}
+
+.footer {
+  font-size: small;
+  width: 100%;
+  text-align: center;
+}
