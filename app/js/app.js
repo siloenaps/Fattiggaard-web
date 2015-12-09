@@ -7,7 +7,7 @@ require('jquery');
 var angular = require('angular');
 require('angular-route');
 
-var app = angular.module('todoApp', [ 'ngRoute' ]);
+var app = angular.module('webApp', [ 'ngRoute' ]);
 
 app.constant('VERSION', require('../../package.json').version);
 

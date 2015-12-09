@@ -1,6 +1,6 @@
 'use strict';
 
-var app = require('angular').module('todoApp');
+var app = require('angular').module('webApp');
 app.controller('FooterCtrl', require('./FooterCtrl'));
 app.controller('MainmenuCtrl', require('./MainmenuCtrl'));
 app.controller('FrontpageCtrl', require('./FrontpageCtrl'));
