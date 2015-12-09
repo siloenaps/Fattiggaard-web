@@ -11,20 +11,22 @@ var app = angular.module('todoApp', [ 'ngRoute' ]);
 
 app.constant('VERSION', require('../../package.json').version);
 
+require('./factory');
 require('./service');
 require('./controller');
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(true).hashPrefix('!');
 
-  $routeProvider.when('/forside', {
+  $routeProvider.when('/', {
     templateUrl: 'views/frontpage.html',
     controller: 'FrontpageCtrl',
   })
   .when('/spil', {
     templateUrl: 'views/game.html',
-    controller: 'GameCtrl',
+    controller: 'GamepageCtrl',
   })
   .otherwise({
-    redirectTo: '/forside',
+    redirectTo: '/',
   });
 });

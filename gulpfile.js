@@ -17,13 +17,13 @@ var gulpPlugins = require('gulp-load-plugins')({
 
 // Define file path variables
 var paths = {
-  root: 'app/',      // App root path
-  src:  'app/js/',   // Source path
-  sass: 'app/sass/',   // SCSS path
-  css:  'app/css/',   // CSS path
+  root:   'app/',         // App root path
+  src:    'app/js/',      // Source path
+  sass:   'app/sass/',    // SCSS path
+  css:    'app/css/',     // CSS path
   views:  'app/views/',   // HTML views path
-  dist: 'app/dist/', // Distribution path
-  test: 'test/',     // Test path
+  dist:   'app/dist/',    // Distribution path
+  test:   'test/'         // Test path
 };
 
 /*
@@ -53,7 +53,6 @@ var paths = {
 var liveReload = true;
 
 gulp.task('sass', function () {
-  console.log('sass');
   return gulp.src(paths.sass + '**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(paths.css));

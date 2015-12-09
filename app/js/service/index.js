@@ -2,5 +2,5 @@
 
 var app = require('angular').module('todoApp');
 
-app.service('MainmenuService', require('./mainmenu'));
-app.service('FrontpageService', require('./frontpage'));
+app.service('MainmenuService', require('./MainmenuService'));
+app.service('FrontpageService', require('./FrontpageService'));

@@ -1,12 +1,12 @@
 'use strict';
 
-module.exports = function($scope, MainmenuService) {
+module.exports = function($scope, $location, MainmenuService, LocationFactory) {
 
   $scope.getItems = MainmenuService.getItems.bind(MainmenuService);
 
   $scope.select = function(item) {
-    console.log(item)
     $scope.$parent.item = item;
+    LocationFactory.go(item.path);
   };
 
   $scope.getCssClass = function(item) {

@@ -1,7 +1,7 @@
 'use strict';
 
 var app = require('angular').module('todoApp');
-app.controller('FooterCtrl', require('./footer'));
-app.controller('MainmenuCtrl', require('./mainmenu'));
-app.controller('FrontpageCtrl', require('./frontpage'));
-app.controller('FrontpageCtrl', require('./game'));
+app.controller('FooterCtrl', require('./FooterCtrl'));
+app.controller('MainmenuCtrl', require('./MainmenuCtrl'));
+app.controller('FrontpageCtrl', require('./FrontpageCtrl'));
+app.controller('GamepageCtrl', require('./GamepageCtrl'));

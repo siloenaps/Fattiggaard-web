@@ -18,6 +18,12 @@ h3{
   font-size: 1.6rem;
 }
 
+.container{
+  &.link{
+    cursor: pointer;
+  }
+}
+
 .border{
   border: 1px solid red;
 }

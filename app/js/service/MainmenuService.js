@@ -5,26 +5,39 @@ module.exports = function() {
   var items = [{
     title: 'FORSIDE',
     text: '',
+    path: '/forside'
   },
   {
     title: 'SPIL',
-    text: ''
+    text: '',
+    path: '/spil'
   },
   {
     title: 'KILDESAMLING',
-    text: ''
+    text: '',
+    path: '/kilder'
   },
   {
     title: 'LÆREVEJLEDNING',
-    text: ''
+    text: '',
+    path: '/vejledning'
   },
   {
     title: 'OM PROJEKTET',
-    text: ''
+    text: '',
+    path: '/projektet'
   }];
 
   this.getItems = function() {
     return items;
+  };
+
+  this.getItemByIndex = function(index) {
+    try{
+      return items[index];  
+    }catch(err){
+      console.log(err);
+    }    
   };
 
 };
