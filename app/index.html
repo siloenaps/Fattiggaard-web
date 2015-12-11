@@ -24,7 +24,7 @@
 
       <!-- Main Menu -->
       <div class="mainmenu">
-        <div ng-controller="MainmenuCtrl">
+        <div ng-controller="MainmenuCtrl" ng-show="show()">
           <a ng-repeat="item in getItems()" ng-click="select(item)" class="mainmenu-item" ng-class="getCssClass(item)">
             <span ng-bind="item.title"></span>
           </a>

@@ -18,7 +18,7 @@ body {
 h3 {
   margin: 0;
   padding: 0;
-  font-family: 'BigNoodleTitling-Regular';
+  font-family: 'BigNoodleTitling';
   font-weight: 100;
   font-size: 1.6rem; }
 
@@ -134,7 +134,7 @@ button {
 .mainmenu {
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-family: 'BigNoodleTitling-Regular';
+  font-family: 'BigNoodleTitling';
   font-weight: 100;
   letter-spacing: 0.1rem;
   margin-bottom: 80px;
@@ -260,27 +260,6 @@ a:hover.sidebar-item-active {
     background-image: url("/assets/images/gameteaser.jpg");
     background-repeat: no-repeat;
     background-position: top left; }
-    .game .preload-wrapper .preloader {
-      width: inherit;
-      height: inherit;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 70px 70px; }
-    .game .preload-wrapper .progress-wrapper {
-      height: inherit;
-      width: 400px;
-      margin: auto;
-      transform: translateY(50%);
-      position: relative;
-      z-index: 2001; }
-      .game .preload-wrapper .progress-wrapper .progress-bar {
-        height: 10px;
-        width: 400px;
-        border: 1px solid #FFF; }
-        .game .preload-wrapper .progress-wrapper .progress-bar .bar {
-          height: inherit;
-          width: inherit;
-          background-color: rgba(255, 255, 255, 0.5); }
   .game .canvas {
     position: absolute;
     top: 0px;

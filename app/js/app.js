@@ -16,6 +16,7 @@ app.constant('VERSION', require('../../package.json').version);
 require('./factory');
 require('./service');
 require('./controller');
+require('./directive');
 
 app.config(function($routeProvider, $locationProvider) {
   // $locationProvider.html5Mode(true).hashPrefix('!');

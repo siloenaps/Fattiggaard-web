@@ -1,10 +1,12 @@
 'use strict';
 var createjs;
 module.exports = function($scope, angularLoad, GameService, MainmenuService, LocationFactory) {  
-
+  var vm = this;
   var index = 0;
   var urls = GameService.urls;
   var urlsTotal = urls.length;
+
+  $scope.loaded = false;
 
   TweenLite.to(".canvas", .1, { alpha: 0 });
 
@@ -15,9 +17,9 @@ module.exports = function($scope, angularLoad, GameService, MainmenuService, Loc
         loadNext(urls[index]);
       }
       if(index === urlsTotal){
-        // $('.preloader').remove();
-        // $('.preloader').hide();
-        TweenLite.to(".canvas", 1, { alpha: 1 });
+        TweenLite.to(".canvas", 1, { alpha: 1, onComplete: function(){
+          vm.loaded = true;
+        } });
       }
       console.log('loading:', url);
     }).catch(function() {
@@ -32,4 +34,9 @@ module.exports = function($scope, angularLoad, GameService, MainmenuService, Loc
     MainmenuService.item = item;
     LocationFactory.go(item.path);
   };
+
+  // $scope.show = function() {
+  //   console.log($scope.loaded)
+  //   return $scope.loaded === false;
+  // };
 };

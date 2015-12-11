@@ -21,35 +21,6 @@
 		background-image: url('/assets/images/gameteaser.jpg');
 		background-repeat: no-repeat;
 		background-position: top left;
-		// background-size: 70px 70px;
-		.preloader{
-			width: inherit;
-			height: inherit;
-			// background-image: url('/assets/images/preloader.gif');
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: 70px 70px;
-		}
-		.progress-wrapper{
-			// border: 3px solid red;
-		    height: inherit;
-		    width: 400px;
-		    margin: auto;
-		    transform: translateY(50%); 
-		    position: relative;
-		    z-index: 2001;
-		       
-		    .progress-bar{
-		      .bar{
-		        height: inherit;
-		        width: inherit;
-		        background-color: rgba(255, 255, 255, 0.5);
-		      }
-		      height: 10px;
-		      width: 400px;
-		      border: 1px solid #FFF;       
-		    }
-		  }
 	}	
 	.canvas{
 		position: absolute;
