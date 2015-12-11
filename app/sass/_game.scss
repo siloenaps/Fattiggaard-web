@@ -1,0 +1,62 @@
+.game{
+	margin: 0px;
+	padding: 0px;
+	// border: 1px solid blue;
+	width: 1024px;
+	height: 648px;
+	max-width: $maxWidth;
+	position: absolute;
+	top: 0px;
+	.close-btn{
+		width: 50px;
+		height: 50px;
+		background-color: rgba(0, 0, 0, .5);
+		position: absolute;
+		right: 0;
+		z-index: 2000;
+	}
+	.preload-wrapper{
+		width: 1024px;
+		height: 648px;
+		background-image: url('/assets/images/gameteaser.jpg');
+		background-repeat: no-repeat;
+		background-position: top left;
+		// background-size: 70px 70px;
+		.preloader{
+			width: inherit;
+			height: inherit;
+			// background-image: url('/assets/images/preloader.gif');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 70px 70px;
+		}
+		.progress-wrapper{
+			// border: 3px solid red;
+		    height: inherit;
+		    width: 400px;
+		    margin: auto;
+		    transform: translateY(50%); 
+		    position: relative;
+		    z-index: 2001;
+		       
+		    .progress-bar{
+		      .bar{
+		        height: inherit;
+		        width: inherit;
+		        background-color: rgba(255, 255, 255, 0.5);
+		      }
+		      height: 10px;
+		      width: 400px;
+		      border: 1px solid #FFF;       
+		    }
+		  }
+	}	
+	.canvas{
+		position: absolute;
+		top: 0px;
+		width: 1024px;
+		height: 648px;
+		margin: 0px;
+		padding: 0px;
+	}	
+}

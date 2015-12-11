@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Angular and Browserify</title>
+  <title>Fattiggård eller Fjendeland</title>
+  <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css"></link>
   <link rel="stylesheet" href="css/unsemantic-grid-responsive.css"></link>
   <link rel="stylesheet" href="css/styles.css"></link>
@@ -11,36 +12,35 @@
 </head>
 
 <body>
-<div class="content grid-container" ng-app="webApp">
+  <div class="content grid-container" ng-app="webApp">
 
-  <div class="grid-100 grid-parent">
+    <div class="grid-100 grid-parent">
 
-    <!-- Topbar -->
-    <div class="margins topbar">
-      <img src="./assets/images/logo.jpg">
-      <img src="./assets/images/forsorgsmuseet_logo.jpg" class="float-right">
+      <!-- Topbar -->
+      <div ng-controller="TopbarCtrl" class="margins topbar">
+        <img src="./assets/images/logo.png">
+        <img src="./assets/images/forsorgsmuseet_logo_small.png" class="float-right logo-to">
+      </div>
+
+      <!-- Main Menu -->
+      <div class="mainmenu">
+        <div ng-controller="MainmenuCtrl">
+          <a ng-repeat="item in getItems()" ng-click="select(item)" class="mainmenu-item" ng-class="getCssClass(item)">
+            <span ng-bind="item.title"></span>
+          </a>
+        </div>      
+      </div>
+
     </div>
 
-    <!-- Main Menu -->
-    <div class="mainmenu">
-      <div ng-controller="MainmenuCtrl">
-        <a ng-repeat="item in getItems()" ng-click="select(item)" class="mainmenu-item" ng-class="getCssClass(item)">
-          <span ng-bind="item.title"></span>
-        </a>
-      </div>      
-    </div>
+    <div ng-view></div>
+
+    <!-- <div ng-controller="FooterCtrl"  class="footer">
+      Fattiggården, Version: {{version}}
+    </div> -->
 
   </div>
-
-  <div ng-view></div>
-
-  <div ng-controller="FooterCtrl"  class="footer">
-    Fattiggården, Version: {{version}}
-  </div>
-
-</div>
-
-<script src="dist/app.js" type="text/javascript"></script>
+  <script src="dist/app.js" type="text/javascript"></script>
 
 </body>
 </html>

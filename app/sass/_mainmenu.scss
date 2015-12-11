@@ -1,10 +1,12 @@
-.mainmenu{
+ .mainmenu{
+  // border: 1px solid green;
   text-transform: uppercase;  
   font-size: 1.2rem;
   font-family: 'BigNoodleTitling-Regular';
   font-weight: 100;
   letter-spacing: 0.1rem;
-  margin-bottom: 112px;
+  margin-bottom: 80px;
+  @include pagePadding();
 
   .mainmenu-item {
     display: inline;

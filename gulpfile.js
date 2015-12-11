@@ -7,7 +7,8 @@ var browserify = require('browserify')
   , glob = require('glob')
   , Server = require('karma').Server
   , gulp = require('gulp')
-  , sass = require('gulp-sass');
+  , sass = require('gulp-sass')
+  , replace = require('gulp-replace');
 
 // Load all gulp plugins listed in package.json
 var gulpPlugins = require('gulp-load-plugins')({
@@ -23,8 +24,31 @@ var paths = {
   css:    'app/css/',     // CSS path
   views:  'app/views/',   // HTML views path
   dist:   'app/dist/',    // Distribution path
-  test:   'test/'         // Test path
+  test:   'test/',         // Test path
+  assets: 'app/assets/'    // assets
 };
+
+gulp.task('cleansing', function(){
+  var base = 'app/assets/game/assets/logic/';
+  return gulp.src([base+'**/*.js'])
+    .pipe(replace('assets/game', ''))
+    .pipe(gulp.dest(base));
+});
+gulp.task('convert', function(){
+  var base = 'app/assets/game/assets/logic/';
+  return gulp.src([base+'**/*.js'])
+    .pipe(replace('../../../assets', './assets'))
+    .pipe(replace('../../assets', './assets'))
+    .pipe(replace('./assets', './assets/game/assets'))
+    .pipe(gulp.dest(base));
+});
+gulp.task('convert2', function(){
+  var base = 'app/assets/game/';
+  return gulp.src([base+'*.js'])
+    .pipe(replace('../assets', './assets'))
+    .pipe(replace('./assets', './assets/game/assets'))
+    .pipe(gulp.dest(base));
+});
 
 /*
  * Useful tasks:
@@ -158,6 +182,7 @@ gulp.task('watch', function () {
     paths.sass + '**/*.scss',
     paths.views + '**/*.html',
     paths.root + 'index.html',
+    paths.assets + '**/*.js',
   ], ['fast', 'sass']);
 });
 

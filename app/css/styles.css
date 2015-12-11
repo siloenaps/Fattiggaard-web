@@ -1,10 +1,19 @@
 body {
-  background-color: #FFF;
-  font-size: 1rem;
-  font-family: helvetica, arial, sans-serif;
-  font-weight: normal;
-  letter-spacing: 0.1rem;
-  padding: 25px; }
+  padding: 25px;
+  background-image: url("/assets/images/baggrund.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 10x solid red; }
+  body .grid-container {
+    padding: 0 !important; }
 
 h3 {
   margin: 0;
@@ -12,6 +21,12 @@ h3 {
   font-family: 'BigNoodleTitling-Regular';
   font-weight: 100;
   font-size: 1.6rem; }
+
+.show {
+  visibility: visible; }
+
+.hide {
+  visibility: hidden; }
 
 .container.link {
   cursor: pointer; }
@@ -22,6 +37,15 @@ h3 {
 .float-right {
   float: right; }
 
+.flip-it {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  filter: FlipH; }
+
 img {
   vertical-align: middle; }
 
@@ -31,7 +55,7 @@ input {
   margin: 0; }
 
 .content {
-  max-width: 925px; }
+  max-width: 1024px; }
 
 .span-save {
   text-decoration: none;
@@ -107,18 +131,14 @@ button {
 .todo-text-edit {
   width: 97%; }
 
-.footer {
-  font-size: small;
-  width: 100%;
-  text-align: center; }
-
 .mainmenu {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-family: 'BigNoodleTitling-Regular';
   font-weight: 100;
   letter-spacing: 0.1rem;
-  margin-bottom: 112px;
+  margin-bottom: 80px;
+  padding: 0 30px 0 50px;
   /* highlight hovered item a bit... */
   /* ...but not if it is already selected */
   /* needs to be defined after topbar-item */ }
@@ -141,7 +161,10 @@ button {
     cursor: default; }
 
 .topbar {
-  margin-bottom: 20px; }
+  margin: 20px 0 20px 0;
+  padding: 0 30px 0 50px; }
+  .topbar .logo-to {
+    padding-top: 25px; }
 
 .sidebar-heading {
   border-top-left-radius: 4px;
@@ -212,3 +235,61 @@ a:hover.sidebar-item-active {
   width: 80%;
   color: #333;
   line-height: 18px; }
+
+.frontpage {
+  padding: 0 30px 0 50px; }
+
+.game {
+  margin: 0px;
+  padding: 0px;
+  width: 1024px;
+  height: 648px;
+  max-width: 1024px;
+  position: absolute;
+  top: 0px; }
+  .game .close-btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    z-index: 2000; }
+  .game .preload-wrapper {
+    width: 1024px;
+    height: 648px;
+    background-image: url("/assets/images/gameteaser.jpg");
+    background-repeat: no-repeat;
+    background-position: top left; }
+    .game .preload-wrapper .preloader {
+      width: inherit;
+      height: inherit;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 70px 70px; }
+    .game .preload-wrapper .progress-wrapper {
+      height: inherit;
+      width: 400px;
+      margin: auto;
+      transform: translateY(50%);
+      position: relative;
+      z-index: 2001; }
+      .game .preload-wrapper .progress-wrapper .progress-bar {
+        height: 10px;
+        width: 400px;
+        border: 1px solid #FFF; }
+        .game .preload-wrapper .progress-wrapper .progress-bar .bar {
+          height: inherit;
+          width: inherit;
+          background-color: rgba(255, 255, 255, 0.5); }
+  .game .canvas {
+    position: absolute;
+    top: 0px;
+    width: 1024px;
+    height: 648px;
+    margin: 0px;
+    padding: 0px; }
+
+.footer {
+  font-size: small;
+  width: 100%;
+  text-align: center; }

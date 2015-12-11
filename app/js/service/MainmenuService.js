@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function() {
+  this.item = undefined;
 
   var items = [{
     title: 'FORSIDE',
