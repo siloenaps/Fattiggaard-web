@@ -1,17 +1,14 @@
 body {
-  padding: 25px;
+  // padding: 25px;
   background-image: url('/assets/images/baggrund.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0px;
   padding: 0px;
-  display: inline;
-  position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  border: 10x solid red;
   .grid-container{
     padding: 0 !important; // Remove site padding from unsemantic
   }
@@ -23,6 +20,9 @@ h3{
   font-weight: 100;
   font-size: 1.6rem;
 }
+// .content{
+//   min-width: 964px !important;
+// }
 
 .show{
   visibility: visible;
@@ -31,7 +31,7 @@ h3{
   visibility: hidden;
 }
 
-.container{
+.container{  
   &.link{
     cursor: pointer;
   }

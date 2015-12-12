@@ -9,6 +9,7 @@ require('angular-route');
 require('angular-load');
 require('gsap');
 
+
 var app = angular.module('webApp', [ 'angularLoad', 'ngRoute' ]);
 
 app.constant('VERSION', require('../../package.json').version);

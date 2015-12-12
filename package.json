@@ -22,6 +22,7 @@
     "browserify-shim": "^3.8.2",
     "chai": "^3.4.1",
     "del": "^2.1.0",
+    "font-awesome": "^4.5.0",
     "glob": "^6.0.1",
     "gsap": "^1.18.0",
     "gulp": "^3.9.0",
@@ -45,6 +46,7 @@
     "protractor": "^2.5.1",
     "sinon": "^1.9.1",
     "sinon-chai": "^2.5.0",
+    "vinyl-ftp": "^0.4.5",
     "vinyl-paths": "^2.1.0",
     "vinyl-source-stream": "^1.1.0"
   },

@@ -1,17 +1,13 @@
 body {
-  padding: 25px;
   background-image: url("/assets/images/baggrund.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0px;
   padding: 0px;
-  display: inline;
-  position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
-  border: 10x solid red; }
+  height: 100%; }
   body .grid-container {
     padding: 0 !important; }
 
@@ -238,22 +234,32 @@ a:hover.sidebar-item-active {
 
 .frontpage {
   padding: 0 30px 0 50px; }
+  .frontpage .wrapper.image-left {
+    border: 1px solid green;
+    width: 350px !important;
+    height: 350px; }
+  .frontpage .wrapper.image-right {
+    border: 1px solid red;
+    width: 350px;
+    height: 350px; }
 
 .game {
   margin: 0px;
   padding: 0px;
-  width: 1024px;
+  width: 100vw;
   height: 648px;
   max-width: 1024px;
   position: absolute;
   top: 0px; }
   .game .close-btn {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 37px;
+    height: 37px;
     position: absolute;
     right: 0;
-    z-index: 2000; }
+    z-index: 2000;
+    cursor: pointer; }
   .game .preload-wrapper {
     width: 1024px;
     height: 648px;

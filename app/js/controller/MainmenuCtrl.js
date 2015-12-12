@@ -1,14 +1,12 @@
 'use strict';
 
-module.exports = function($scope, $location, MainmenuService, LocationFactory) {
+module.exports = function($scope, $window, $location, MainmenuService, LocationFactory) {
 
   $scope.getItems = MainmenuService.getItems.bind(MainmenuService);
 
   $scope.show = function() {
-    if(MainmenuService.item === undefined)
-      return false;
-    
-    return MainmenuService.item.title !== 'SPIL';
+    var list = $window.location.href.split('/');
+    return list[list.length - 1] !== 'spil';
   };
 
   $scope.getCurrentPage = function() {

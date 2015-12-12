@@ -4,6 +4,7 @@ var browserify = require('browserify')
   , del = require('del')
   , source = require('vinyl-source-stream')
   , vinylPaths = require('vinyl-paths')
+  , ftp = require( 'vinyl-ftp' )
   , glob = require('glob')
   , Server = require('karma').Server
   , gulp = require('gulp')
@@ -49,6 +50,35 @@ gulp.task('convert2', function(){
     .pipe(replace('./assets', './assets/game/assets'))
     .pipe(gulp.dest(base));
 });
+
+/**
+ * Deploy
+ */
+gulp.task( 'deploy-stage', function () {
+ 
+    var conn = ftp.create( {
+        host:     'siloen.dk',
+        user:     'siloen',
+        password: 'cxraz999',
+        parallel: 10,
+        log:      'ftp-log.txt'
+    } );
+ 
+    var globs = [
+        paths.root + 'index.html',
+        paths.views + '**/*',
+        paths.dist + '**/*',
+        paths.css + '**/*',
+        paths.assets + '**/*',
+    ];
+    // using base = '.' will transfer everything to /public_html correctly 
+    // turn off buffering in gulp.src for best performance 
+ 
+    return gulp.src( globs, { base: './app', buffer: false } )
+        .pipe( conn.newer( '/var/www/html/clients/forsorgsmuseet' ) ) // only upload newer files 
+        .pipe( conn.dest( '/var/www/html/clients/forsorgsmuseet' ) );
+ 
+} );
 
 /*
  * Useful tasks:
@@ -115,7 +145,7 @@ gulp.task('browserify', /*['lint', 'unit'],*/ function () {
   .pipe(gulpPlugins.connect.reload());
 });
 
-gulp.task('ngAnnotate', ['lint', 'unit'], function () {
+gulp.task('ngAnnotate', ['lint'], function () {
   return gulp.src([
       paths.src + '**/*.js',
       '!' + paths.src + 'third-party/**',
