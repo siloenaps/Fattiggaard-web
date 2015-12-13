@@ -16,22 +16,30 @@ module.exports = function() {
   {
     title: 'KILDESAMLING',
     text: '',
-    path: '/kilder'
+    path: '/kildesamling'
   },
   {
-    title: 'LÆREVEJLEDNING',
+    title: 'TIL LÆREREN',
     text: '',
-    path: '/vejledning'
+    path: '/til-laereren'
   },
   {
     title: 'OM PROJEKTET',
     text: '',
-    path: '/projektet'
+    path: '/om-projektet'
   }];
 
   this.getItems = function() {
     return items;
   };
+
+  this.getItemByPath = function(path){
+    for(var i in items){
+      if(items[i].path === path){
+        return items[i];
+      }
+    }
+  }
 
   this.getItemByIndex = function(index) {
     try{

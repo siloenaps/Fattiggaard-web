@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = function($scope, $window, $location, MainmenuService, LocationFactory) {
-
+  console.log('MainmenuCtrl');
+  
   $scope.getItems = MainmenuService.getItems.bind(MainmenuService);
 
   $scope.show = function() {

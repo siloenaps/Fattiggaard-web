@@ -1,18 +1,3 @@
 .frontpage{
 	@include pagePadding();
-
-	.wrapper{
-		// display: inline;
-
-		&.image-left{
-			border: 1px solid green;
-			width: 350px !important;
-			height: 350px;
-		}
-		&.image-right{
-			border: 1px solid red;
-			width: 350px;
-			height: 350px;
-		}
-	}
 }

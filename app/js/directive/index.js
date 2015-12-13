@@ -1,4 +1,5 @@
 'use strict';
 
 var app = require('angular').module('webApp');
-app.directive('preloader', require('./PreloaderDirective'));
+app.directive('slider', require('./SliderDirective'));
+// app.directive('preloader', require('./PreloaderDirective'));

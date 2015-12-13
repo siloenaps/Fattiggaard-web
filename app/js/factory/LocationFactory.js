@@ -1,7 +1,18 @@
 'use strict';
 
 module.exports = function($location, $window, $route, MainmenuService) {
-	return {
+	var current = function() {
+		var list = $window.location.href.split('/');
+		var p = list[list.length - 1];			
+		return '/' + p; // Get path macthing the path in the main menu
+	}
+
+	
+	// console.log(MainmenuService.getItemByPath(current()));
+	var currentPathItem = MainmenuService.getItemByPath(current())
+	MainmenuService.item = currentPathItem;
+
+	return {		
         go: function (path) {
             this.currentPath = path;
 			// $location.path(path);

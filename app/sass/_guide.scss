@@ -1,0 +1,16 @@
+.guide{
+	@include pagePadding();
+
+	.list{
+		margin-top: 30px;
+		margin-left: 2px;
+		.item{
+			img{
+				margin-right: 10px;
+			}
+		}
+		.item:hover{
+			cursor: pointer;
+		}
+	}
+}

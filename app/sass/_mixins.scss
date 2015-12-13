@@ -1,3 +1,11 @@
 @mixin pagePadding(){
-	padding: 0 30px 0 50px;
+	padding: 0 $paddingSides 0 $paddingSides;
+}
+
+@mixin translateY($val){
+	-moz-transform: translateY($val);
+	-o-transform: translateY($val);
+	-webkit-transform: translateY($val);
+	-ms-transform: translateY($val);
+	transform: translateY($val);
 }

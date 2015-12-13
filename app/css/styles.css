@@ -8,8 +8,6 @@ body {
   left: 0px;
   width: 100%;
   height: 100%; }
-  body .grid-container {
-    padding: 0 !important; }
 
 h3 {
   margin: 0;
@@ -24,8 +22,11 @@ h3 {
 .hide {
   visibility: hidden; }
 
-.container.link {
-  cursor: pointer; }
+.container {
+  min-width: 1024px !important;
+  max-width: 1024px !important; }
+  .container.link {
+    cursor: pointer; }
 
 .border {
   border: 1px solid red; }
@@ -41,9 +42,6 @@ h3 {
   transform: scaleX(-1);
   -ms-filter: "FlipH";
   filter: FlipH; }
-
-img {
-  vertical-align: middle; }
 
 input {
   font: inherit;
@@ -129,12 +127,12 @@ button {
 
 .mainmenu {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-family: 'BigNoodleTitling';
   font-weight: 100;
   letter-spacing: 0.1rem;
   margin-bottom: 80px;
-  padding: 0 30px 0 50px;
+  padding: 0 49px 0 49px;
   /* highlight hovered item a bit... */
   /* ...but not if it is already selected */
   /* needs to be defined after topbar-item */ }
@@ -155,93 +153,22 @@ button {
   .mainmenu .mainmenu-item-active {
     color: #c5463e;
     cursor: default; }
+  .mainmenu .fb-logo {
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 .topbar {
-  margin: 20px 0 20px 0;
-  padding: 0 30px 0 50px; }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 49px 0 49px; }
   .topbar .logo-to {
     padding-top: 25px; }
 
-.sidebar-heading {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 7px;
-  font-size: 1.3em; }
-
-.sidebar-heading-skin {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #071720; }
-
-.sidebar-item-borders {
-  color: inherit;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #304050;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #071720;
-  border-right-width: 0px;
-  border-left-width: 0px; }
-
-.sidebar-item-borders:last-child {
-  border-bottom-width: 0px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px; }
-
-.sidebar-item {
-  display: block;
-  padding: 5px 15px;
-  position: relative;
-  color: inherit;
-  text-decoration: inherit; }
-
-.sidebar-item-inactive {
-  cursor: pointer; }
-
-/* highlight hovered item a bit... */
-a:hover.sidebar-item {
-  color: #eee;
-  text-decoration: inherit; }
-
-/* ...but not if it is already selected */
-a:hover.sidebar-item-active {
-  color: inherit;
-  text-decoration: inherit; }
-
-/* needs to be defined after sidebar-item */
-.sidebar-item-active {
-  font-weight: bold;
-  border-top-color: #031017;
-  border-bottom-color: #203040;
-  background-image: none;
-  background-color: #102030;
-  cursor: default; }
-
-/* in headline */
-.current-item {
-  font-size: 18px;
-  font-weight: bold;
-  height: 28px;
-  line-height: 36px; }
-
-.current-item-edit {
-  width: 80%;
-  color: #333;
-  line-height: 18px; }
-
 .frontpage {
-  padding: 0 30px 0 50px; }
-  .frontpage .wrapper.image-left {
-    border: 1px solid green;
-    width: 350px !important;
-    height: 350px; }
-  .frontpage .wrapper.image-right {
-    border: 1px solid red;
-    width: 350px;
-    height: 350px; }
+  padding: 0 49px 0 49px; }
 
 .game {
   margin: 0px;
@@ -278,3 +205,90 @@ a:hover.sidebar-item-active {
   font-size: small;
   width: 100%;
   text-align: center; }
+
+.about {
+  padding: 0 49px 0 49px; }
+  .about .logo {
+    margin-top: 30px; }
+
+.guide {
+  padding: 0 49px 0 49px; }
+  .guide .list {
+    margin-top: 30px;
+    margin-left: 2px; }
+    .guide .list .item img {
+      margin-right: 10px; }
+    .guide .list .item:hover {
+      cursor: pointer; }
+
+.collection {
+  padding: 0 49px 0 49px; }
+  .collection .sidebar {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-family: 'BigNoodleTitling';
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    margin-bottom: 80px; }
+    .collection .sidebar .sidebar-item {
+      display: block;
+      padding: 0;
+      position: relative;
+      color: inherit;
+      text-decoration: inherit; }
+    .collection .sidebar .sidebar-item-inactive {
+      cursor: pointer; }
+    .collection .sidebar a:hover.sidebar-item {
+      color: inherit;
+      text-decoration: inherit; }
+    .collection .sidebar a:hover.sidebar-item-active {
+      color: #c5463e;
+      text-decoration: inherit; }
+    .collection .sidebar .sidebar-item-active {
+      color: #c5463e;
+      cursor: default; }
+  .collection .content {
+    margin: 0;
+    padding: 0; }
+    .collection .content .slider-box {
+      margin: 0;
+      padding: 0;
+      width: 558px;
+      position: relative;
+      top: 0;
+      left: 0; }
+      .collection .content .slider-box .wrapper {
+        position: absolute;
+        top: 0;
+        left: 32px; }
+        .collection .content .slider-box .wrapper .slide {
+          position: absolute;
+          top: 0;
+          left: 0; }
+      .collection .content .slider-box .arrow {
+        position: absolute;
+        top: 143px;
+        width: 23px;
+        cursor: pointer; }
+        .collection .content .slider-box .arrow img {
+          width: inherit; }
+        .collection .content .slider-box .arrow.right {
+          left: 553px; }
+
+.slide.ng-hide-add,
+.slide.ng-hide-remove {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  display: block !important; }
+
+.slide.ng-hide-add.ng-hide-add-active,
+.slide.ng-hide-remove {
+  opacity: 0; }
+
+.slide.ng-hide-add,
+.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1; }

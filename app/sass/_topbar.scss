@@ -1,5 +1,6 @@
 .topbar{
-	margin: 20px 0 20px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	@include pagePadding();
 	.logo-to{
 		padding-top: 25px;

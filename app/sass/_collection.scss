@@ -1,0 +1,76 @@
+.collection{
+	@include pagePadding();
+	.sidebar{
+		margin: 0px;
+		padding: 0px;
+
+		text-transform: uppercase;  
+		font-size: 2.3rem;
+		font-family: 'BigNoodleTitling';
+		font-weight: 100;
+		letter-spacing: 0.1rem;
+		margin-bottom: 80px;
+
+		.sidebar-item {    
+		  display: block;
+		  padding: 0;
+		  position: relative;
+		  color: inherit;
+		  text-decoration: inherit;
+		}
+		.sidebar-item-inactive {
+		  cursor: pointer;
+		}
+		a:hover.sidebar-item {
+		  color: inherit;
+		  text-decoration: inherit;
+		}
+		a:hover.sidebar-item-active {
+		  color: $menuColorActive;
+		  text-decoration: inherit;
+		}
+		.sidebar-item-active {
+		  color: $menuColorActive;
+		  cursor: default;
+		}
+	}
+
+	.content{		
+		margin: 0;
+		padding: 0;
+
+		.slider-box{
+			margin: 0;
+			padding: 0;
+			width: 558px;		
+			position: relative;	
+			top:0;
+			left:0;
+			.wrapper{
+				position: absolute;
+				top: 0;
+				left: 32px;
+				.slide{			
+					position:absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+			.arrow{
+				position: absolute;
+				top: 143px;
+				width: 23px;
+				cursor: pointer;
+				img{
+					width: inherit;
+				}
+				&.left{
+
+				}
+				&.right{
+					left: 553px;
+				}
+			}
+		}		
+	}
+}
