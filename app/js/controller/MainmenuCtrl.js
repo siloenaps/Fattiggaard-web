@@ -1,8 +1,6 @@
 'use strict';
 
 module.exports = function($scope, $window, $location, MainmenuService, LocationFactory) {
-  console.log('MainmenuCtrl');
-  
   $scope.getItems = MainmenuService.getItems.bind(MainmenuService);
 
   $scope.show = function() {
@@ -14,13 +12,12 @@ module.exports = function($scope, $window, $location, MainmenuService, LocationF
     if(MainmenuService.item === undefined)
       return;
 
-    console.log(MainmenuService.item.title);
     return MainmenuService.item.title;
   };
 
-  $scope.select = function(item) {
-    MainmenuService.item = item;
-    LocationFactory.go(item.path);
+  $scope.select = function(item) {    
+    // MainmenuService.item = item;
+    LocationFactory.go(item);
   };
 
   $scope.getCssClass = function(item) {

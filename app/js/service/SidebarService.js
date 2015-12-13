@@ -6,27 +6,47 @@ module.exports = function() {
   var items = [{
     title: 'ARTIKLER',
     text: '',
-    path: '/kildesamling::artikler'
+    path: '/kildesamling/artikler',
+    type: 'source'
   },
   {
     title: 'TEKSTER',
     text: '',
-    path: '/kildesamling::tekster'
+    path: '/kildesamling/tekster',
+    type: 'source'
   },
   {
     title: 'BILLEDER',
     text: '',
-    path: '/kildesamling::billeder'
+    path: '/kildesamling/billeder',
+    type: 'source'
   },
   {
     title: 'FILM',
     text: '',
-    path: '/kildesamling::film'
+    path: '/kildesamling/film',
+    type: 'source'
   }];
 
   this.getItems = function() {
     return items;
   };
+
+  this.getItemByPath = function(path){
+    console.log(path)
+    for(var i in items){
+      if(items[i].path === path){
+        return items[i];
+      }
+    }
+  }
+  this.getItemByType = function(type){
+    for(var i in items){
+      if(items[i].type === type){
+        return items[i];
+      }
+    }
+  }
 
   this.getItemByIndex = function(index) {
     console.log('getItemByIndex')

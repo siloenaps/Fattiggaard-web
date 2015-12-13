@@ -35,24 +35,20 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: 'views/game.html',
     controller: 'GamepageCtrl',
   })
-  .when('/kildesamling', {
-    templateUrl: 'views/collection.html',
-    controller: 'CollectionpageCtrl',
-  })
-  .when('/kildesamling::artikler', {
+  // .when('/kildesamling', {
+  //   templateUrl: 'views/collection-articles.html', // Articles is the default page 
+  //   controller: 'CollectionpageCtrl',
+  // })
+  .when('/kildesamling/artikler', {
     templateUrl: 'views/collection-articles.html',
     controller: 'CollectionpageCtrl',
   })
-  .when('/kildesamling::billeder', {
+  .when('/kildesamling/billeder', {
     templateUrl: 'views/collection-images.html',
     controller: 'CollectionpageCtrl',
   })
-  .when('/kildesamling::tekster', {
+  .when('/kildesamling/tekster', {
     templateUrl: 'views/collection-texts.html',
-    controller: 'CollectionpageCtrl',
-  })  
-  .when('/kildesamling::film', {
-    templateUrl: 'views/collection-video.html',
     controller: 'CollectionpageCtrl',
   })  
   .when('/til-laereren', {

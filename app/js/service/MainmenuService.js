@@ -6,27 +6,32 @@ module.exports = function() {
   var items = [{
     title: 'FORSIDE',
     text: '',
-    path: '/forside'
+    path: '/',
+    type: 'frontpage'
   },
   {
     title: 'SPIL',
     text: '',
-    path: '/spil'
+    path: '/spil',
+    type: 'game'
   },
   {
     title: 'KILDESAMLING',
     text: '',
-    path: '/kildesamling'
+    path: '/kildesamling/artikler',
+    type: 'source'
   },
   {
     title: 'TIL LÆREREN',
     text: '',
-    path: '/til-laereren'
+    path: '/til-laereren',
+    type: 'guide'
   },
   {
     title: 'OM PROJEKTET',
     text: '',
-    path: '/om-projektet'
+    path: '/om-projektet',
+    type: 'about'
   }];
 
   this.getItems = function() {
@@ -36,6 +41,13 @@ module.exports = function() {
   this.getItemByPath = function(path){
     for(var i in items){
       if(items[i].path === path){
+        return items[i];
+      }
+    }
+  }
+  this.getItemByType = function(type){
+    for(var i in items){
+      if(items[i].type === type){
         return items[i];
       }
     }

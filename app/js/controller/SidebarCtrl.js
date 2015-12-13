@@ -18,8 +18,8 @@ module.exports = function($scope, $window, $location, SidebarService, LocationFa
   };
 
   $scope.select = function(item) {
-    SidebarService.item = item;
-    LocationFactory.go(item.path);
+    // SidebarService.item = item;
+    LocationFactory.go(item);
   };
 
   $scope.getCssClass = function(item) {
