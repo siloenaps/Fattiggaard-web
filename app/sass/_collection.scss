@@ -1,5 +1,35 @@
 .collection{
 	@include pagePadding();
+
+	.list{
+		margin-top: 30px;
+		margin-left: 2px;
+		.item{
+			img{
+				margin-right: 10px;
+			}
+		}
+		.item:hover{
+			cursor: pointer;
+		}
+	}
+
+	.wrapper-vimeo{
+		border: 1px solid #e1e2e3;
+		background-color: #FFF;
+		width: 305px;
+		height: 176px;
+		padding: 4px;
+		margin-bottom: 56px;
+
+		.title{
+			margin-top: 5px;
+		}
+	}
+	.right-col{
+		padding: 0 0 0 15px; 
+	}
+
 	.sidebar{
 		margin: 0px;
 		padding: 0px;
@@ -39,38 +69,51 @@
 		margin: 0;
 		padding: 0;
 
-		.slider-box{
-			margin: 0;
-			padding: 0;
-			width: 558px;		
-			position: relative;	
-			top:0;
-			left:0;
-			.wrapper{
-				position: absolute;
-				top: 0;
-				left: 32px;
-				.slide{			
-					position:absolute;
-					top: 0;
-					left: 0;
+		.slider{
+			.counter{
+				display: block;
+				padding-top: 10px;
+				span{
+					margin-left: 260px;
 				}
 			}
-			.arrow{
-				position: absolute;
-				top: 143px;
-				width: 23px;
-				cursor: pointer;
-				img{
-					width: inherit;
-				}
-				&.left{
 
+			.slider-box{
+				display: block;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 360px;
+				// height: 123px;	
+				// position: relative;	
+				// top:0;
+				// left:0;
+				.wrapper{
+					position: absolute;
+					top: 0;
+					left: 32px;
+					.slide{			
+						position:absolute;
+						top: 0;
+						left: 0;
+					}
 				}
-				&.right{
-					left: 553px;
+				.arrow{
+					position: absolute;
+					top: 143px;
+					width: 23px;
+					cursor: pointer;
+					img{
+						width: inherit;
+					}
+					&.left{
+
+					}
+					&.right{
+						left: 553px;
+					}
 				}
-			}
-		}		
+			}	
+		}	
 	}
 }

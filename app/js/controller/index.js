@@ -10,3 +10,4 @@ app.controller('GuidepageCtrl', require('./GuidepageCtrl'));
 app.controller('CollectionpageCtrl', require('./CollectionpageCtrl'));
 app.controller('SliderCtrl', require('./SliderCtrl'));
 app.controller('SidebarCtrl', require('./SidebarCtrl'));
+app.controller('VideoCtrl', require('./VideoCtrl'));

@@ -1,13 +1,20 @@
-<div class="slider-box">
-	<div ng-click="prev()" class="arrow left">
-		<img src="assets/images/arrow-left.png"/>
+<div class="slider">
+	<div class="slider-box">
+		<div ng-click="prev()" class="arrow left">
+			<img src="assets/images/arrow-left.png"/>
+		</div>
+		<div class="wrapper">
+			<div class="slide" ng-repeat="image in images" ng-show="image.visible">
+				<img ng-src="assets/images/{{image.path}}" />
+			</div>		
+		</div>	
+		<div ng-click="next()" class="arrow right">
+			<img src="assets/images/arrow-right.png" />
+		</div>
 	</div>
-	<div class="wrapper">
-		<div class="slide" ng-repeat="image in images" ng-show="image.visible">
-			<img ng-src="assets/images/{{image.path}}" />
-		</div>		
-	</div>	
-	<div ng-click="next()" class="arrow right">
-		<img src="assets/images/arrow-right.png" />
+	<div class="counter">
+		<span>
+			{{(currentIndex + 1)+' ud af '+images.length}}
+		</span>
 	</div>	
 </div>

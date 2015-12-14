@@ -30,9 +30,8 @@ module.exports = function($scope, angularLoad, GameService, MainmenuService, Loc
 
   $scope.close = function() {
     var item = MainmenuService.getItemByIndex(0);
-    console.log(item)
     MainmenuService.item = item;
-    LocationFactory.go(item.path);
+    LocationFactory.go(item);
   };
 
   // $scope.show = function() {

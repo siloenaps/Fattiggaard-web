@@ -8,6 +8,13 @@
     
   </div>
   <div class="content col-xs-10">
-  	
+    <div class="row list">
+        <div class="col-xs-12">
+            <div ng-repeat="item in getTexts()" ng-click="select(item)" class="item">
+                <img src="./assets/images/pdf-logo.png" alt="">
+                {{item.title}}
+            </div>
+        </div>
+    </div>
   </div>
 </div>

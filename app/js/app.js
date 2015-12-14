@@ -8,10 +8,11 @@ var angular = require('angular');
 require('angular-route');
 require('angular-load');
 require('angular-animate');
+require('angular-sanitize');
 require('gsap');
 
 
-var app = angular.module('webApp', [ 'angularLoad', 'ngRoute', 'ngAnimate' ]);
+var app = angular.module('webApp', [ 'angularLoad', 'ngRoute', 'ngAnimate', 'ngSanitize']);
 
 app.constant('VERSION', require('../../package.json').version);
 
@@ -20,8 +21,18 @@ require('./service');
 require('./controller');
 require('./directive');
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider, $locationProvider, $sceDelegateProvider) {
   // $locationProvider.html5Mode(true).hashPrefix('!');
+
+    $sceDelegateProvider.resourceUrlWhitelist([
+      // Allow same origin resource loads.
+      'self',
+      // Allow loading from our assets domain.
+      'http://player.vimeo.com/**',
+      'https://player.vimeo.com/**',
+      'http://vimeo.com/**'
+    ]);
+
 
   $routeProvider.when('/', {
     templateUrl: 'views/frontpage.html',
@@ -35,11 +46,7 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: 'views/game.html',
     controller: 'GamepageCtrl',
   })
-  // .when('/kildesamling', {
-  //   templateUrl: 'views/collection-articles.html', // Articles is the default page 
-  //   controller: 'CollectionpageCtrl',
-  // })
-  .when('/kildesamling/artikler', {
+  .when('/kildesamling/artikler', { // Deafult page for the hole kildesamling - sub group
     templateUrl: 'views/collection-articles.html',
     controller: 'CollectionpageCtrl',
   })
@@ -49,6 +56,10 @@ app.config(function($routeProvider, $locationProvider) {
   })
   .when('/kildesamling/tekster', {
     templateUrl: 'views/collection-texts.html',
+    controller: 'CollectionpageCtrl',
+  }) 
+  .when('/kildesamling/film', {
+    templateUrl: 'views/collection-video.html',
     controller: 'CollectionpageCtrl',
   })  
   .when('/til-laereren', {

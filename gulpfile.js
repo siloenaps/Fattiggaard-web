@@ -114,7 +114,7 @@ gulp.task('sass', function () {
 
 gulp.task('clean', function () {
   return gulp
-  .src([paths.root + 'ngAnnotate', paths.dist], {read: false})
+  .src([paths.root + 'ngAnnotate', paths.dist, '!lib/**/*'], {read: false})
   .pipe(vinylPaths(del));
 });
 

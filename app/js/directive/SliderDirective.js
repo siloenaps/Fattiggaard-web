@@ -5,6 +5,7 @@ module.exports = function($timeout) {
 	scope:{
 		images: '='
 	},
+	// scope.imagesTotal: scope.images.length,
     link: function (scope, elem, attrs) {
 	
 		scope.currentIndex=0;

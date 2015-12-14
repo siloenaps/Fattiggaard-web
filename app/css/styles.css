@@ -223,6 +223,24 @@ button {
 
 .collection {
   padding: 0 49px 0 49px; }
+  .collection .list {
+    margin-top: 30px;
+    margin-left: 2px; }
+    .collection .list .item img {
+      margin-right: 10px; }
+    .collection .list .item:hover {
+      cursor: pointer; }
+  .collection .wrapper-vimeo {
+    border: 1px solid #e1e2e3;
+    background-color: #FFF;
+    width: 305px;
+    height: 176px;
+    padding: 4px;
+    margin-bottom: 56px; }
+    .collection .wrapper-vimeo .title {
+      margin-top: 5px; }
+  .collection .right-col {
+    padding: 0 0 0 15px; }
   .collection .sidebar {
     margin: 0px;
     padding: 0px;
@@ -252,29 +270,33 @@ button {
   .collection .content {
     margin: 0;
     padding: 0; }
-    .collection .content .slider-box {
+    .collection .content .slider .counter {
+      display: block;
+      padding-top: 10px; }
+      .collection .content .slider .counter span {
+        margin-left: 260px; }
+    .collection .content .slider .slider-box {
+      display: block;
       margin: 0;
       padding: 0;
-      width: 558px;
-      position: relative;
-      top: 0;
-      left: 0; }
-      .collection .content .slider-box .wrapper {
+      width: 100%;
+      height: 360px; }
+      .collection .content .slider .slider-box .wrapper {
         position: absolute;
         top: 0;
         left: 32px; }
-        .collection .content .slider-box .wrapper .slide {
+        .collection .content .slider .slider-box .wrapper .slide {
           position: absolute;
           top: 0;
           left: 0; }
-      .collection .content .slider-box .arrow {
+      .collection .content .slider .slider-box .arrow {
         position: absolute;
         top: 143px;
         width: 23px;
         cursor: pointer; }
-        .collection .content .slider-box .arrow img {
+        .collection .content .slider .slider-box .arrow img {
           width: inherit; }
-        .collection .content .slider-box .arrow.right {
+        .collection .content .slider .slider-box .arrow.right {
           left: 553px; }
 
 .slide.ng-hide-add,

@@ -33,7 +33,6 @@ module.exports = function() {
   };
 
   this.getItemByPath = function(path){
-    console.log(path)
     for(var i in items){
       if(items[i].path === path){
         return items[i];
@@ -49,7 +48,6 @@ module.exports = function() {
   }
 
   this.getItemByIndex = function(index) {
-    console.log('getItemByIndex')
     try{
       return items[index];  
     }catch(err){

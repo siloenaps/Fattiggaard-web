@@ -2,4 +2,4 @@
 
 var app = require('angular').module('webApp');
 app.directive('slider', require('./SliderDirective'));
-// app.directive('preloader', require('./PreloaderDirective'));
+app.directive('vimeo', require('./VimeoDirective'));
