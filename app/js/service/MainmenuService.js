@@ -40,10 +40,13 @@ module.exports = function() {
 
   this.getItemByPath = function(path){
     for(var i in items){
+      // console.log(items[i].path, ', ', path, items[i].path === path)
       if(items[i].path === path){
         return items[i];
       }
     }
+    // Fall back
+    return items[0];
   }
   this.getItemByType = function(type){
     for(var i in items){

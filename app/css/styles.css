@@ -27,6 +27,8 @@ h3 {
   max-width: 1024px !important; }
   .container.link {
     cursor: pointer; }
+  .container .link {
+    cursor: pointer; }
 
 .border {
   border: 1px solid red; }
@@ -177,7 +179,8 @@ button {
   height: 648px;
   max-width: 1024px;
   position: absolute;
-  top: 0px; }
+  top: 0px;
+  left: 0px; }
   .game .close-btn {
     margin-top: 10px;
     margin-right: 10px;

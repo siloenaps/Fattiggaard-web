@@ -26,7 +26,8 @@ var paths = {
   views:  'app/views/',   // HTML views path
   dist:   'app/dist/',    // Distribution path
   test:   'test/',         // Test path
-  assets: 'app/assets/'    // assets
+  assets: 'app/assets/',    // assets
+  templates: 'app/templates/'    // templates
 };
 
 gulp.task('cleansing', function(){
@@ -70,6 +71,8 @@ gulp.task( 'deploy-stage', function () {
         paths.dist + '**/*',
         paths.css + '**/*',
         paths.assets + '**/*',
+        paths.assets + '**/*',
+        paths.templates + '**/*.html',
     ];
     // using base = '.' will transfer everything to /public_html correctly 
     // turn off buffering in gulp.src for best performance 
