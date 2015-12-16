@@ -3,7 +3,7 @@
 	padding: 0px;
 	// border: 1px solid blue;
 	width: 100vw;
-	height: 648px;
+	height: 100vh;
 	max-width: $maxWidth;
 	position: absolute;
 	top: 0px;
@@ -37,8 +37,10 @@
 	.canvas{
 		position: absolute;
 		top: 0px;
-		width: 1024px;
-		height: 648px;
+		width: 100vw;
+		height: 100vh;
+		max-width: 1024px;
+		max-height: 648px;
 		margin: 0px;
 		padding: 0px;
 	}	
