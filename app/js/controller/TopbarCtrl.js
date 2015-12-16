@@ -7,7 +7,7 @@ module.exports = function($scope, $location, MainmenuService, LocationFactory) {
   	$scope.selectByIndex = function(index) {
 		var item = MainmenuService.getItemByIndex(index);
 		MainmenuService.item = item;
-		LocationFactory.go(item.path);
+		LocationFactory.go(item);
 	};
 
 	$scope.show = function() {

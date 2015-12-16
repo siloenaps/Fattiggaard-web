@@ -16,16 +16,13 @@
     "jquery": "^2.1.1"
   },
   "devDependencies": {
-    "angular-animate": "^1.4.8",
     "angular-load": "^0.4.0",
     "angular-loader": "^1.4.8",
-    "angular-sanitize": "^1.4.8",
     "angular-video": "0.0.0",
     "browserify": "^12.0.1",
     "browserify-shim": "^3.8.2",
     "chai": "^3.4.1",
     "del": "^2.1.0",
-    "font-awesome": "^4.5.0",
     "glob": "^6.0.1",
     "gsap": "^1.18.0",
     "gulp": "^3.9.0",

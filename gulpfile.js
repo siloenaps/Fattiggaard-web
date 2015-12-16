@@ -71,8 +71,62 @@ gulp.task( 'deploy-stage', function () {
         paths.dist + '**/*',
         paths.css + '**/*',
         paths.assets + '**/*',
-        paths.assets + '**/*',
         paths.templates + '**/*.html',
+    ];
+    // using base = '.' will transfer everything to /public_html correctly 
+    // turn off buffering in gulp.src for best performance 
+ 
+    return gulp.src( globs, { base: './app', buffer: false } )
+        .pipe( conn.newer( '/var/www/html/clients/forsorgsmuseet' ) ) // only upload newer files 
+        .pipe( conn.dest( '/var/www/html/clients/forsorgsmuseet' ) );
+ 
+} );
+
+gulp.task( 'deploy-web-stage-code', function () {
+ 
+    var conn = ftp.create( {
+        host:     'siloen.dk',
+        user:     'siloen',
+        password: 'cxraz999',
+        parallel: 10,
+        log:      'ftp-log.txt'
+    } );
+ 
+    var globs = [
+        paths.root + 'index.html',
+        paths.views + '**/*',
+        paths.dist + '**/*',
+        paths.css + '**/*',
+        paths.templates + '**/*.html',
+    ];
+    // using base = '.' will transfer everything to /public_html correctly 
+    // turn off buffering in gulp.src for best performance 
+ 
+    return gulp.src( globs, { base: './app', buffer: false } )
+        .pipe( conn.newer( '/var/www/html/clients/forsorgsmuseet' ) ) // only upload newer files 
+        .pipe( conn.dest( '/var/www/html/clients/forsorgsmuseet' ) );
+ 
+} );
+
+gulp.task( 'deploy-stage-game-code', function () {
+ 
+    var conn = ftp.create( {
+        host:     'siloen.dk',
+        user:     'siloen',
+        password: 'cxraz999',
+        parallel: 10,
+        log:      'ftp-log.txt'
+    } );
+ 
+    var globs = [
+        // paths.root + 'index.html',
+        // paths.views + '**/*',
+        // paths.dist + '**/*',
+        // paths.css + '**/*',
+        paths.assets + 'game/*.js',
+        paths.assets + 'game/*.css',
+        paths.assets + 'game/*.html',
+        paths.assets + 'game/assets/logic/**/*.js',
     ];
     // using base = '.' will transfer everything to /public_html correctly 
     // turn off buffering in gulp.src for best performance 
