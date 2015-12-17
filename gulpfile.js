@@ -9,6 +9,8 @@ var browserify = require('browserify')
   , Server = require('karma').Server
   , gulp = require('gulp')
   , sass = require('gulp-sass')
+  , runSequence = require('run-sequence')
+  , shell = require('gulp-shell')
   , replace = require('gulp-replace');
 
 // Load all gulp plugins listed in package.json
@@ -27,7 +29,8 @@ var paths = {
   dist:   'app/dist/',    // Distribution path
   test:   'test/',         // Test path
   assets: 'app/assets/',    // assets
-  templates: 'app/templates/'    // templates
+  templates: 'app/templates/',    // templates
+  build: 'build/'    // build for production
 };
 
 gulp.task('cleansing', function(){
@@ -52,6 +55,14 @@ gulp.task('convert2', function(){
     .pipe(gulp.dest(base));
 });
 
+// BUILD
+gulp.task('build', function () {
+  runSequence('sass', 'browserify-min');
+});
+
+gulp.task('move-js', shell.task([
+  'cp ./app/dist/app.min.js ./build/'
+]))
 /**
  * Deploy
  */
@@ -72,6 +83,31 @@ gulp.task( 'deploy-stage', function () {
         paths.css + '**/*',
         paths.assets + '**/*',
         paths.templates + '**/*.html',
+    ];
+    // using base = '.' will transfer everything to /public_html correctly 
+    // turn off buffering in gulp.src for best performance 
+ 
+    return gulp.src( globs, { base: './app', buffer: false } )
+        .pipe( conn.newer( '/var/www/html/clients/forsorgsmuseet' ) ) // only upload newer files 
+        .pipe( conn.dest( '/var/www/html/clients/forsorgsmuseet' ) );
+ 
+} );
+
+gulp.task( 'deploy-game-code-stage', function () {
+ 
+    var conn = ftp.create( {
+        host:     'siloen.dk',
+        user:     'siloen',
+        password: 'cxraz999',
+        parallel: 10,
+        log:      'ftp-log.txt'
+    } );
+ 
+    var globs = [
+        paths.assets + 'game/*.js',
+        paths.assets + 'game/*.css',
+        paths.assets + 'game/index.html',
+        paths.assets + 'game/assets/logic/**/*.js',
     ];
     // using base = '.' will transfer everything to /public_html correctly 
     // turn off buffering in gulp.src for best performance 
