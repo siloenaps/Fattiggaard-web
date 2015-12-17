@@ -6,6 +6,13 @@ body {
   background-repeat: no-repeat;
   overflow: hidden; }
 
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'BigNoodleTitling';
+  font-weight: 100;
+  font-size: 2.2rem; }
+
 h3 {
   margin: 0;
   padding: 0;
@@ -168,6 +175,9 @@ button {
 
 .frontpage {
   padding: 0 49px 0 49px; }
+  .frontpage .wrapper.link:hover {
+    color: #c5463e;
+    text-decoration: inherit; }
 
 .game {
   margin: 0px;
@@ -228,8 +238,18 @@ button {
   .collection .list {
     margin-top: 30px;
     margin-left: 2px; }
-    .collection .list .item img {
-      margin-right: 10px; }
+    .collection .list .item {
+      margin: 0 0 15px 0; }
+      .collection .list .item img {
+        margin: 0;
+        padding: 0; }
+      .collection .list .item .title {
+        margin: 10px 0 0 -15px; }
+      .collection .list .item .description {
+        margin: 0 0 0 10px; }
+      .collection .list .item .link:hover {
+        color: #c5463e;
+        text-decoration: inherit; }
     .collection .list .item:hover {
       cursor: pointer; }
   .collection .wrapper-vimeo {
@@ -273,10 +293,9 @@ button {
     margin: 0;
     padding: 0; }
     .collection .content .slider .counter {
-      display: block;
-      padding-top: 10px; }
-      .collection .content .slider .counter span {
-        margin-left: 260px; }
+      padding-top: 5px; }
+    .collection .content .slider .description {
+      padding-top: 15px; }
     .collection .content .slider .slider-box {
       display: block;
       margin: 0;

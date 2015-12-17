@@ -6,15 +6,28 @@
 		<div class="wrapper">
 			<div class="slide" ng-repeat="image in images" ng-show="image.visible">
 				<img ng-src="assets/images/{{image.path}}" />
+				<div class="counter">
+					<div class="row">
+						<div class="col-xs-2 col-xs-offset-5">
+							<span>
+								{{(currentIndex + 1)+' ud af '+images.length}}
+							</span>
+						</div>
+					</div>					
+				</div>	
+				<div class="description">
+					<div class="row">
+						<div class="col-xs-12">
+							<span>
+								{{image.text}}
+							</span>
+						</div>
+					</div>					
+				</div>	
 			</div>		
 		</div>	
 		<div ng-click="next()" class="arrow right">
 			<img src="assets/images/arrow-right.png" />
 		</div>
-	</div>
-	<div class="counter">
-		<span>
-			{{(currentIndex + 1)+' ud af '+images.length}}
-		</span>
 	</div>	
 </div>

@@ -52,7 +52,7 @@ app.config(["$routeProvider", "$locationProvider", "$sceDelegateProvider", funct
     templateUrl: 'views/collection-images.html',
     controller: 'CollectionpageCtrl',
   })
-  .when('/kildesamling/tekster', {
+  .when('/kildesamling/kilder', {
     templateUrl: 'views/collection-texts.html',
     controller: 'CollectionpageCtrl',
   }) 

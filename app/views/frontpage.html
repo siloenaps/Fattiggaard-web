@@ -1,8 +1,22 @@
 <div class="frontpage row">
-  <div class="wrapper left col-xs-4">
-    <img src="./assets/images/frontpage1.jpg" alt="" class="link" ng-click="selectByIndex(2)">    
-  </div>
-  <div class="wrapper right col-xs-8">
-  	<img src="./assets/images/frontpage2.jpg" class="float-right link" ng-click="selectByIndex(1)"> 
-  </div>
+	<div class="col-xs-4">
+		<div class="wrapper left link" ng-click="selectByIndex(2)">
+		  	<div class="image">
+		  		<img src="./assets/images/frontpage1.jpg">    
+		  	</div>    
+		  	<div class="byline">
+		  		<h2>Kildesamling</h2>
+		  	</div>    
+		</div>
+	</div>
+	<div class="col-xs-8">
+  		<div class="wrapper right link float-right" ng-click="selectByIndex(1)">
+		  	<div class="image">
+		  		<img src="./assets/images/frontpage2.jpg"> 
+		  	</div>    
+		  	<div class="byline float-right">
+		  		<h2>Spil spillet</h2>
+		  	</div>      	
+  		</div>
+	</div>  
 </div>

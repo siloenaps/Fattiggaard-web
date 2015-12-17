@@ -5,8 +5,21 @@
 		margin-top: 30px;
 		margin-left: 2px;
 		.item{
+			margin: 0 0 15px 0;
 			img{
-				margin-right: 10px;
+				margin: 0;
+				padding: 0;
+			}
+			.title{
+				margin: 10px 0 0 -15px;
+			}			
+			.description{
+				margin: 0 0 0 10px;
+			}
+
+			.link:hover {
+			  color: $menuColorActive;
+			  text-decoration: inherit;
 			}
 		}
 		.item:hover{
@@ -70,12 +83,12 @@
 		padding: 0;
 
 		.slider{
-			.counter{
-				display: block;
-				padding-top: 10px;
-				span{
-					margin-left: 260px;
-				}
+			.counter{			
+				padding-top: 5px;
+			}
+
+			.description{
+				padding-top: 15px;
 			}
 
 			.slider-box{
@@ -92,7 +105,6 @@
 						position:absolute;
 						top: 0;
 						left: 0;
-						// opacity: 0.3; // 
 					}
 				}
 				.arrow{

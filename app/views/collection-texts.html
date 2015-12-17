@@ -10,11 +10,32 @@
   <div class="content col-xs-10">
     <div class="row list">
         <div class="col-xs-12">
+          <div ng-repeat="item in getTexts()" ng-click="select(item)" class="item">
+            <div class="row link">
+              <div class="col-xs-1">
+                <img src="./assets/images/pdf-logo.png" alt="">
+              </div>
+              <div class="col-xs-11">
+                <div class="title">{{item.title}}</div>
+                <!-- <span class="description">{{item.text}}</span>     -->
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="description">{{item.text}}</div>    
+              </div>
+            </div>            
+        </div>
+    </div>
+  </div>
+  <!-- <div class="content col-xs-10">
+    <div class="row list">
+        <div class="col-xs-12">
             <div ng-repeat="item in getTexts()" ng-click="select(item)" class="item">
                 <img src="./assets/images/pdf-logo.png" alt="">
                 {{item.title}}
             </div>
         </div>
     </div>
-  </div>
+  </div> -->
 </div>

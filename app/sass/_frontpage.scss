@@ -1,12 +1,9 @@
 .frontpage{
 	@include pagePadding();
-  // .wrapper{
-  //   border: 2px solid red;
-  // }
-  // img{
-  //   @media (max-width: 768px) {
-  //     transform: scale(0.66);
-  //     float: center;
-  //   }
-  // }
+  .wrapper{
+    &.link:hover {
+      color: $menuColorActive;
+      text-decoration: inherit;
+    }
+  }
 }

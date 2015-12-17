@@ -10,9 +10,9 @@ module.exports = function() {
     type: 'source'
   },
   {
-    title: 'TEKSTER',
+    title: 'KILDER',
     text: '',
-    path: '/kildesamling/tekster',
+    path: '/kildesamling/kilder',
     type: 'source'
   },
   {

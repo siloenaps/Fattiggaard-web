@@ -11,8 +11,12 @@
   	<div class="row list">
         <div class="col-xs-12">
             <div ng-repeat="item in getArticles()" ng-click="select(item)" class="item">
+              <div class="link">
                 <img src="./assets/images/pdf-logo.png" alt="">
-                {{item.title}}
+                <span>
+                  {{item.title}}
+                </span>
+              </div>                
             </div>
         </div>
     </div>

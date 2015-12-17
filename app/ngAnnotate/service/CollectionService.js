@@ -28,25 +28,25 @@ module.exports = function() {
 		return articles;
 	};
 
-	// Texts ----------------------------------------------------------------
+	// Texts/Sources -------------------------------------------------------------
 	var texts = [{
 		title: 'Lorem ipsum .',
-		text: '',
+		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aliquam animi modi.',
 		path: './assets/pdf/test.pdf'
 	},
 	{
 		title: 'Lorem ipsum  sit.',
-		text: '',
+		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod.',
 		path: './assets/pdf/'
 	},
 	{
 		title: 'Lorem m dolor sit.',
-		text: '',
+		text: 'Lorem ipsum dolor sit.',
 		path: './assets/pdf/forside'
 	},
 	{
 		title: 'Lorem lor sit.',
-		text: '',
+		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempore officiis quidem corrupti est incidunt voluptas, ex quos dolor accusantium, laudantium obcaecati praesentium!',
 		path: './assets/pdf/forside'
 	}];
 
