@@ -25,6 +25,7 @@ var paths = {
   src:    'app/js/',      // Source path
   sass:   'app/sass/',    // SCSS path
   css:    'app/css/',     // CSS path
+  fonts:  'app/fonts/',     // Font path
   views:  'app/views/',   // HTML views path
   dist:   'app/dist/',    // Distribution path
   test:   'test/',         // Test path
@@ -81,6 +82,7 @@ gulp.task( 'deploy-stage', function () {
         paths.views + '**/*',
         paths.dist + '**/*',
         paths.css + '**/*',
+        paths.fonts + '**/*',
         paths.assets + '**/*',
         paths.templates + '**/*.html',
     ];
