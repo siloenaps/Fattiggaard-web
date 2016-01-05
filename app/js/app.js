@@ -7,10 +7,11 @@ require('jquery');
 var angular = require('angular');
 require('angular-route');
 require('angular-load');
+require('angular-sanitize');
 require('gsap');
 
 
-var app = angular.module('webApp', [ 'angularLoad', 'ngRoute']);
+var app = angular.module('webApp', [ 'angularLoad', 'ngRoute', 'ngSanitize']);
 
 app.constant('VERSION', require('../../package.json').version);
 

@@ -1,27 +1,32 @@
 <div class="collection row">
   <div class="col-xs-2">
-  	<div class="sidebar" ng-controller="SidebarCtrl">
-  		<a ng-repeat="item in getItems()" ng-click="select(item)" class="sidebar-item" ng-class="getCssClass(item)">
+    <div class="sidebar" ng-controller="SidebarCtrl">
+      <a ng-repeat="item in getItems()" ng-click="select(item)" class="sidebar-item" ng-class="getCssClass(item)">
             <span ng-bind="item.title"></span>
-        </a>	
-  	</div>
+        </a>  
+    </div>
     
   </div>
   <div class="content col-xs-10" ng-controller="VideoCtrl" >
     <div class="row">
-      <div class="col-xs-5" ng-repeat="item in getItems()">
+      <div class="col-xs-12">
+        <div class="collection-header">
+          Klippet er fra tv-serien ”Tysklandsarbejderne”. Serien er produceret af Nexus Kommunikation A/S og Cicerone ApS.
+        </div>
+      </div>
+    </div>
+    <div class="row video-container" ng-repeat="item in getItems()">
+      <div class="col-xs-5">
+        <!-- <span class="title">{{item.title}}</span>  -->
         <div class="wrapper-vimeo">
-          <vimeo vid={{item.id}} pid={{$index}} width="295" height="166"></vimeo>  
-          <span class="title">{{item.title}} {{item.id}}</span> 
+          <vimeo vid={{item.id}} pid={{$index}} width="295" height="166"></vimeo>            
+          <!-- <span class="title">{{item.title}}</span>  -->
         </div>     
       </div>
-      <!-- <div class="col-xs-7 right-col">
-        <div class="wrapper-vimeo">
-          <vimeo control-boolean="isPlaying" vid="147758866" pid="1" width="295" height="166"></vimeo>  
-        </div>      
-      </div> -->
+      <div class="col-xs-7 text">
+        <div class="title">{{item.title}}</div> 
+        <div class="">{{item.text}}</div>  
+      </div>
     </div>   
   </div>
 </div>
-
-

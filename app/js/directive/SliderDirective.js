@@ -25,7 +25,7 @@ module.exports = function($timeout) {
 				image.visible = false;
 			});
 			scope.images[scope.currentIndex].visible = true;
-			console.log(scope.images[scope.currentIndex])
+			// console.log(scope.images[scope.currentIndex])
 			// TweenLite.to(scope.images[scope.currentIndex], 1, { left: 512 * scope.direction, onComplete: function(){
 	  //         console.log('done');
 	  //       } });

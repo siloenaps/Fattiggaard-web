@@ -3,8 +3,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden; }
+  background-repeat: no-repeat; }
 
 h2 {
   margin: 0;
@@ -235,23 +234,28 @@ button {
 
 .collection {
   padding: 0 49px 0 49px; }
-  .collection .list {
-    margin-top: 30px;
-    margin-left: 2px; }
-    .collection .list .item {
-      margin: 0 0 15px 0; }
-      .collection .list .item img {
-        margin: 0;
-        padding: 0; }
-      .collection .list .item .title {
-        margin: 10px 0 0 -15px; }
-      .collection .list .item .description {
-        margin: 0 0 0 10px; }
-      .collection .list .item .link:hover {
-        color: #c5463e;
-        text-decoration: inherit; }
-    .collection .list .item:hover {
-      cursor: pointer; }
+  .collection .collection-header {
+    margin-bottom: 30px; }
+  .collection .list .text-container {
+    margin-bottom: 15px; }
+  .collection .list .item {
+    margin: 0 0 25px 0; }
+    .collection .list .item img {
+      margin: 0;
+      padding: 0; }
+    .collection .list .item .title {
+      margin: 10px 0 0 -15px; }
+    .collection .list .item .description {
+      margin: 0 0 0 10px; }
+    .collection .list .item .file {
+      margin: 0 0 0 5px; }
+    .collection .list .item .link:hover {
+      color: #c5463e;
+      text-decoration: inherit; }
+  .collection .list .item:hover {
+    cursor: pointer; }
+  .collection .video-container .title {
+    font-weight: bold; }
   .collection .wrapper-vimeo {
     border: 1px solid #e1e2e3;
     background-color: #FFF;
@@ -259,8 +263,6 @@ button {
     height: 176px;
     padding: 4px;
     margin-bottom: 56px; }
-    .collection .wrapper-vimeo .title {
-      margin-top: 5px; }
   .collection .right-col {
     padding: 0 0 0 15px; }
   .collection .sidebar {
@@ -295,7 +297,8 @@ button {
     .collection .content .slider .counter {
       padding-top: 5px; }
     .collection .content .slider .description {
-      padding-top: 15px; }
+      padding: 15px 0 0 32px;
+      max-width: 512px; }
     .collection .content .slider .slider-box {
       display: block;
       margin: 0;
@@ -303,7 +306,7 @@ button {
       width: 100%;
       height: 360px; }
       .collection .content .slider .slider-box .wrapper {
-        position: absolute;
+        position: relative;
         top: 0;
         left: 32px; }
         .collection .content .slider .slider-box .wrapper .slide {
@@ -318,7 +321,7 @@ button {
         .collection .content .slider .slider-box .arrow img {
           width: inherit; }
         .collection .content .slider .slider-box .arrow.right {
-          left: 553px; }
+          left: 570px; }
 
 .slide.ng-hide-add,
 .slide.ng-hide-remove {
