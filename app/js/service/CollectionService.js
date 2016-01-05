@@ -3,26 +3,14 @@
 module.exports = function() {
   
   	// Articles ----------------------------------------------------------------
-	var articles = [{
-		title: 'Lorem ipsum dolor sit.',
-		text: '',
-		path: './assets/pdf/test.pdf'
-	},
-	{
-		title: 'Lorem ipsum dolor sit.',
-		text: '',
-		path: './assets/pdf/'
-	},
-	{
-		title: 'Lorem ipsum dolor sit.',
-		text: '',
-		path: './assets/pdf/forside'
-	},
-	{
-		title: 'Lorem ipsum dolor sit.',
-		text: '',
-		path: './assets/pdf/forside'
-	}];
+	var articles = [
+		{
+			text: [	'<b>Lorem ipsum dolor.</b>',
+					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quo sit placeat labore eligendi, iure eos sunt quae cupiditate nihil vel nobis saepe eaque! Labore nulla laboriosam voluptatem, nemo magni hic eum esse quam, velit sit impedit iste sequi similique commodi fuga repellat beatae aperiam.'],
+			files: [
+				{title:'Lorem ipsum.', path:'./assets/pdf/'}]
+		},
+	];
 
 	this.getArticles = function() {
 		return articles;
