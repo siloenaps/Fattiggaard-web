@@ -47,7 +47,14 @@ module.exports = function() {
 			text: [	'<b>Afhøringsskemaer</b>',
 					'Når man blev indlagt på en fattiggård eller arbejdsanstalt, blev man som noget af det allerførste afhørt af stedets forvalter. De oplysninger, som blev givet under en sådan afhøring, noterede forvalteren ned i et afhøringsskema. Flere af de spørgsmål, som den afhørte blev afkrævet svar på, var meget personlige. Oplysningerne blev bl.a. brugt til at afgøre, i hvilken afdeling af anstalten den afhørte skulle indlægges. Afhøringsskemaerne blev udfyldt i forbindelse med indlæggelsen af Georg Emil Madsen d. 10. oktober 1939 og Georg Jensenius Johannes Andersen d. 8. juli 1940.'],
 			files: [
-				{title:'Afhøringsskema 8. juli 1940 - Georg Jensenius Johannes Andersen', path:'./assets/pdf/Afhøringsskema8.juli1940-GeorgJenseniusJohannesAndersen.pdf'}]
+				{
+					title:'Afhøringsskema 8. juli 1940 - Georg Jensenius Johannes Andersen', 
+					path:'./assets/pdf/Afhøringsskema8.juli1940-GeorgJenseniusJohannesAndersen.pdf'
+				},
+				{
+					title: 'Afhøringsskema 10. oktober 1939 - Georg Emil Madsen',
+					path: 'Afhøringsskema10.oktober1939-GeorgEmilMadsen.pdf'
+				}]
 		},
 		{
 			text: [	'<b>Annonce, Svendborg Avis</b>',
