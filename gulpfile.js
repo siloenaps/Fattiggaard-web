@@ -94,6 +94,34 @@ gulp.task( 'deploy-stage', function () {
         .pipe( conn.dest( '/var/www/html/clients/forsorgsmuseet' ) );
  
 } );
+gulp.task( 'deploy-live', function () {
+ 
+    var conn = ftp.create( {
+        host:     'ftp.fattiggaardellerfjendeland.dk',
+        user:     'fattiggaardellerfjendeland.dk',
+        password: 'Jwr1866',
+        parallel: 1,
+        log:      'ftp-live-log.txt'
+    } );
+ 
+    var globs = [
+        paths.root + 'index.html',
+        paths.views + '**/*',
+        paths.dist + '**/*',
+        paths.css + '**/*',
+        paths.fonts + '**/*',
+        paths.assets + '**/*',
+        paths.templates + '**/*.html',
+    ];
+    // using base = '.' will transfer everything to /public_html correctly 
+    // turn off buffering in gulp.src for best performance 
+ 
+    return gulp.src( globs, { base: './app', buffer: false } )
+        .pipe( conn.newer( '/' ) ) // only upload newer files 
+        .pipe( conn.dest( '/' ) );
+ 
+} );
+
 
 gulp.task( 'deploy-game-code-stage', function () {
  
