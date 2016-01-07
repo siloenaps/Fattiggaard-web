@@ -1,0 +1,12 @@
+<div class="collection row">
+	<div class="col-xs-2">
+	  	<div class="sidebar" ng-controller="SidebarCtrl">
+	  		<a ng-repeat="item in getItems()" ng-click="select(item)" class="sidebar-item" ng-class="getCssClass(item)">
+	            <span ng-bind="item.title"></span>
+	        </a>	
+	  	</div>    
+ 	</div>
+	<div class="content col-xs-10" ng-controller="SliderCtrl">		
+		<slider images="images"/>
+  	</div>
+</div>

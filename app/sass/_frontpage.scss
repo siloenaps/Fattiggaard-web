@@ -1,5 +1,9 @@
 .frontpage{
-	// .container{
-	// 	border: 1px solid red;
-	// }
+	@include pagePadding();
+  .wrapper{
+    &.link:hover {
+      color: $menuColorActive;
+      text-decoration: inherit;
+    }
+  }
 }

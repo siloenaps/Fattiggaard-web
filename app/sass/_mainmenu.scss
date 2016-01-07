@@ -1,10 +1,11 @@
-.mainmenu{
+ .mainmenu{
   text-transform: uppercase;  
-  font-size: 1.2rem;
-  font-family: 'BigNoodleTitling-Regular';
+  font-size: 1.6rem;
+  font-family: 'BigNoodleTitling';
   font-weight: 100;
   letter-spacing: 0.1rem;
-  margin-bottom: 112px;
+  margin-bottom: 80px;
+  @include pagePadding();  
 
   .mainmenu-item {
     display: inline;
@@ -37,4 +38,7 @@
     cursor: default;
   }
 
+  .fb-logo{
+    @include translateY(-50%);
+  }
 }

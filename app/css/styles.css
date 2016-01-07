@@ -1,0 +1,341 @@
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'BigNoodleTitling';
+  font-weight: 100;
+  font-size: 2.2rem; }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'BigNoodleTitling';
+  font-weight: 100;
+  font-size: 1.6rem; }
+
+.background {
+  position: fixed;
+  background-image: url("/assets/images/baggrund.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.show {
+  visibility: visible; }
+
+.hide {
+  visibility: hidden; }
+
+.container {
+  width: 100vw;
+  max-width: 1024px !important; }
+  .container.link {
+    cursor: pointer; }
+  .container .link {
+    cursor: pointer; }
+
+.border {
+  border: 1px solid red; }
+
+.float-right {
+  float: right; }
+
+.flip-it {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  filter: FlipH; }
+
+input {
+  font: inherit;
+  font-family: inherit;
+  margin: 0; }
+
+.content {
+  max-width: 1024px; }
+
+.span-save {
+  text-decoration: none;
+  vertical-align: middle; }
+
+.margins {
+  margin-top: 2px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px; }
+
+.padding {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-top: 2px; }
+
+.rounded-box {
+  border-width: 0px;
+  border-radius: 4px; }
+
+button {
+  margin: 0em;
+  font: -webkit-small-control;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start; }
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ccc;
+  background-color: #203040;
+  border-color: #102030; }
+
+.btn:hover, .btn:focus, .btn:active {
+  color: #fff;
+  border-color: #102030;
+  background-color: #506070; }
+
+.dark-blue-bg {
+  background-color: #203040; }
+
+.medium-blue-bg {
+  background-color: #304050; }
+
+.text-on-blue {
+  color: #ccc; }
+
+.todo-text {
+  height: 200px;
+  background-color: #eee; }
+
+.todo-text-edit {
+  width: 97%; }
+
+.mainmenu {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: 'BigNoodleTitling';
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  margin-bottom: 80px;
+  padding: 0 49px 0 49px;
+  /* highlight hovered item a bit... */
+  /* ...but not if it is already selected */
+  /* needs to be defined after topbar-item */ }
+  .mainmenu .mainmenu-item {
+    display: inline;
+    padding: 0 25px 0 0;
+    position: relative;
+    color: inherit;
+    text-decoration: inherit; }
+  .mainmenu .mainmenu-item-inactive {
+    cursor: pointer; }
+  .mainmenu a:hover.mainmenu-item {
+    color: inherit;
+    text-decoration: inherit; }
+  .mainmenu a:hover.mainmenu-item-active {
+    color: #c5463e;
+    text-decoration: inherit; }
+  .mainmenu .mainmenu-item-active {
+    color: #c5463e;
+    cursor: default; }
+  .mainmenu .fb-logo {
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.topbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 49px 0 49px; }
+  .topbar .logo-to {
+    padding-top: 25px; }
+
+.frontpage {
+  padding: 0 49px 0 49px; }
+  .frontpage .wrapper.link:hover {
+    color: #c5463e;
+    text-decoration: inherit; }
+
+.game {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1024px;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  .game .close-btn {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    z-index: 2000;
+    cursor: pointer; }
+  .game .preload-wrapper {
+    width: 1024px;
+    height: 648px;
+    background-image: url("/assets/images/gameteaser.jpg");
+    background-repeat: no-repeat;
+    background-position: top left; }
+  .game .canvas {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1024px;
+    max-height: 648px;
+    margin: 0px;
+    padding: 0px; }
+
+.footer {
+  font-size: small;
+  width: 100%;
+  text-align: center; }
+
+.about {
+  padding: 0 49px 0 49px; }
+  .about .logo {
+    margin-top: 30px; }
+
+.guide {
+  padding: 0 49px 0 49px; }
+  .guide .list {
+    margin-top: 30px;
+    margin-left: 2px; }
+    .guide .list .item img {
+      margin-right: 10px; }
+    .guide .list .item:hover {
+      cursor: pointer; }
+
+.collection {
+  padding: 0 49px 0 49px; }
+  .collection .collection-header {
+    margin-bottom: 30px; }
+  .collection .list .text-container {
+    margin-bottom: 15px; }
+  .collection .list .item {
+    margin: 0 0 25px 0; }
+    .collection .list .item img {
+      margin: 0;
+      padding: 0; }
+    .collection .list .item .title {
+      margin: 10px 0 0 -15px; }
+    .collection .list .item .description {
+      margin: 0 0 0 10px; }
+    .collection .list .item .file {
+      margin: 0 0 0 5px; }
+    .collection .list .item .link:hover {
+      color: #c5463e;
+      text-decoration: inherit; }
+  .collection .list .item:hover {
+    cursor: pointer; }
+  .collection .video-container .title {
+    font-weight: bold; }
+  .collection .wrapper-vimeo {
+    border: 1px solid #e1e2e3;
+    background-color: #FFF;
+    width: 305px;
+    height: 176px;
+    padding: 4px;
+    margin-bottom: 56px; }
+  .collection .right-col {
+    padding: 0 0 0 15px; }
+  .collection .sidebar {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-family: 'BigNoodleTitling';
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    margin-bottom: 80px; }
+    .collection .sidebar .sidebar-item {
+      display: block;
+      padding: 0;
+      position: relative;
+      color: inherit;
+      text-decoration: inherit; }
+    .collection .sidebar .sidebar-item-inactive {
+      cursor: pointer; }
+    .collection .sidebar a:hover.sidebar-item {
+      color: inherit;
+      text-decoration: inherit; }
+    .collection .sidebar a:hover.sidebar-item-active {
+      color: #c5463e;
+      text-decoration: inherit; }
+    .collection .sidebar .sidebar-item-active {
+      color: #c5463e;
+      cursor: default; }
+  .collection .content {
+    margin: 0;
+    padding: 0; }
+    .collection .content .slider .counter {
+      padding-top: 5px; }
+    .collection .content .slider .description {
+      padding: 15px 0 0 32px;
+      max-width: 512px; }
+    .collection .content .slider .slider-box {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 360px; }
+      .collection .content .slider .slider-box .wrapper {
+        position: relative;
+        top: 0;
+        left: 32px; }
+        .collection .content .slider .slider-box .wrapper .slide {
+          position: absolute;
+          top: 0;
+          left: 0; }
+      .collection .content .slider .slider-box .arrow {
+        position: absolute;
+        top: 143px;
+        width: 23px;
+        cursor: pointer; }
+        .collection .content .slider .slider-box .arrow img {
+          width: inherit; }
+        .collection .content .slider .slider-box .arrow.right {
+          left: 570px; }
+
+.slide.ng-hide-add,
+.slide.ng-hide-remove {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  display: block !important; }
+
+.slide.ng-hide-add.ng-hide-add-active,
+.slide.ng-hide-remove {
+  opacity: 0; }
+
+.slide.ng-hide-add,
+.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1; }
