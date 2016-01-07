@@ -336,7 +336,7 @@ gulp.task('watch', function () {
     paths.views + '**/*.html',
     paths.root + 'index.html',
     paths.assets + '**/*.js',
-  ], ['fast', 'sass']);
+  ], ['fast', 'sass', 'ngAnnotate', 'browserify-min']);
 });
 
 gulp.task('fast', ['clean'], function () {
