@@ -2,7 +2,7 @@
 
 module.exports = function($location, $window, $route, MainmenuService, SidebarService) {
 	var path = $location.path();
-	console.log(path)
+	// console.log(path)
 
 	var mainitem = MainmenuService.getItemByPath(path);
 	var subitem;
