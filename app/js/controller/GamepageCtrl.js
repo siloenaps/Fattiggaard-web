@@ -21,7 +21,7 @@ module.exports = function($scope, angularLoad, GameService, MainmenuService, Loc
           vm.loaded = true;
         } });
       }
-      // console.log('loading:', url);
+      
     }).catch(function() {
       console.log('Error loading game');
     });
