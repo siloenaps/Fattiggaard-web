@@ -57,7 +57,7 @@ module.exports = function() {
 				},
 				{
 					title: 'Afhøringsskema 10. oktober 1939 - Georg Emil Madsen',
-					path: 'Afhøringsskema10.oktober1939-GeorgEmilMadsen.pdf'
+					path: './assets/pdf/Afhøringsskema10.oktober1939-GeorgEmilMadsen.pdf'
 				}]
 		},
 		{
@@ -78,7 +78,7 @@ module.exports = function() {
 			files: [
 				{
 					title:'Politirapporter, Peter Sander', 
-					path:'./assets/pdf/Politirapporter_PeterSander.jpg'
+					path:'./assets/pdf/Politirapporter_PeterSander.pdf'
 				}]
 		},
 		{

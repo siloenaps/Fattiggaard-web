@@ -67,7 +67,7 @@ gulp.task('move-js', shell.task([
 /**
  * Deploy
  */
-gulp.task( 'deploy-stage', function () {
+gulp.task( 'deploy-stage', ['build'], function () {
  
     var conn = ftp.create( {
         host:     'siloen.dk',
@@ -94,7 +94,7 @@ gulp.task( 'deploy-stage', function () {
         .pipe( conn.dest( '/var/www/html/clients/forsorgsmuseet' ) );
  
 } );
-gulp.task( 'deploy-live', function () {
+gulp.task( 'deploy-live', ['build'], function () {
  
     var conn = ftp.create( {
         host:     'ftp.fattiggaardellerfjendeland.dk',
