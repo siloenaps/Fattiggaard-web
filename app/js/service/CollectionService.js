@@ -17,19 +17,32 @@ module.exports = function() {
 	};
 
 	// Texts/Sources -------------------------------------------------------------
-	var texts = [{
-		text: [	'<b>Reglementer for Svendborg Fattiggård, Horsens Forsørgelsesanstalt og Arbejdsanstalten Sundholm</b>',
-				'Reglementerne for Svendborg Fattiggård, Horsens Forsørgelsesanstalt og Arbejdsanstalten Sundholm giver et indblik i, hvordan man ønskede at dagene skulle forløbe på anstalterne bl.a. hvilke regler man ønskede overholdt, dagens tidsinddeling og straffe for overtrædelse af reglementernes paragrafer. Udvalgte paragrafer i reglementerne blev ophængt på anstalterne på steder, hvor de indlagte kunne se dem.'],
-		files: [
-			{title:'Reglement, Svendborg', path:'./assets/pdf/Reglement_Svendborg.pdf'},
-			{title:'Reglement, Horsens', path:'./assets/pdf/Reglement_Horsens.pdf'},
-			{title:'Reglement, Sundholm', path:'./assets/pdf/Reglement_Sundholm.pdf'}]
+	var texts = [
+		{
+			text: [	'<b>Reglementer for Svendborg Fattiggård, Horsens Forsørgelsesanstalt og Arbejdsanstalten Sundholm</b>',
+					'Reglementerne for Svendborg Fattiggård, Horsens Forsørgelsesanstalt og Arbejdsanstalten Sundholm giver et indblik i, hvordan man ønskede at dagene skulle forløbe på anstalterne bl.a. hvilke regler man ønskede overholdt, dagens tidsinddeling og straffe for overtrædelse af reglementernes paragrafer. Udvalgte paragrafer i reglementerne blev ophængt på anstalterne på steder, hvor de indlagte kunne se dem.'],
+			files: [
+				{
+					title:'Reglement, Svendborg', 
+					path:'./assets/pdf/Reglement_Svendborg.pdf'
+				},
+				{
+					title:'Reglement, Horsens', 
+					path:'./assets/pdf/Reglement_Horsens.pdf'
+				},
+				{
+					title:'Reglement, Sundholm', 
+					path:'./assets/pdf/Reglement_Sundholm.pdf'
+				}]
 		},
 		{
 			text: [	'<b>Steinckes Socialreform 1933</b>',
 					'Udvalgte paragrafer fra Steinckes socialreform fra 1933. Paragrafferne giver, udover kendskab til datidens sociallovgivning, et godt billede af synet på de mennesker, som havde brug for hjælp fra det offentlige.'],
 			files: [
-				{title:'Lov Nr. 181 af 20. Maj 1933', path:'./assets/pdf/LovNr181af20.Maj1933.pdf'}]
+				{
+					title:'Lov Nr. 181 af 20. Maj 1933', 
+					path:'./assets/pdf/LovNr181af20.Maj1933.pdf'
+				}]
 		},
 		{
 			text: [	'<b>Afhøringsskemaer</b>',
@@ -48,7 +61,10 @@ module.exports = function() {
 			text: [	'<b>Annonce, Svendborg Avis</b>',
 					'Jobannonce indrykket af det tyske hvervekontor - Svendborg Avis d. 16. april 1942.'],
 			files: [
-				{title:'Annonce i Svendborg avis', path:'./assets/pdf/AnnonceiSvendborgavisd.torsdagd.16.april1942.jpg'}]
+				{
+					title:'Annonce i Svendborg avis', 
+					path:'./assets/pdf/AnnonceiSvendborgavisd.torsdagd.16.april1942.jpg'
+				}]
 		},
 		{
 			text: [	'<b>Materiale om Peter Charles Sander</b>',
@@ -57,25 +73,37 @@ module.exports = function() {
 					'<b>Politirapporter</b>',
 					'To politirapporter, der omhandler anholdelsen af Peter Charles Sander, der var indlagt på Svendborg Fattiggård flere gange. I begge tilfælde blev han anholdt for offentlig beruselse og indlagt på Svendborg Fattiggård efter afsoning af sin beruselsesdom. Tiggeri medførte også anholdelse og ofte indlæggelse på fattiggård eller arbejdsanstalt.'],
 			files: [
-				{title:'Politirapporter, Peter Sander', path:'./assets/pdf/Politirapporter_PeterSander.jpg'}]
+				{
+					title:'Politirapporter, Peter Sander', 
+					path:'./assets/pdf/Politirapporter_PeterSander.jpg'
+				}]
 		},
 		{
 			text: [	'<b>Tre breve fra Peter Charles Sander til Svendborg socialudvalg </b>',
 					'Hvordan kommer man ud af anstalten? I brevene kan man læse Peter Charles Sanders breve til Svendborg kommunes socialudvalg. I brevene beder Sander om tilladelse til at dimittere fra anstalten, men hver gang får han afslag.'],
 			files: [
-				{title:'Breve, Peter Sander', path:'./assets/pdf/Breve_PeterSander.pdf'}]
+				{
+					title:'Breve, Peter Sander', 
+					path:'./assets/pdf/Breve_PeterSander.pdf'
+				}]
 		},
 		{
 			text: [	'<b>Afslag</b>',
 					'Afslag fra Socialudvalget på Peter Charles Sanders anmodning inkl. begrundelse for afslaget. '],
 			files: [
-				{title:'Afslag, Peter Sander', path:'./assets/pdf/Afslag_PeterSander.pdf'}]
+				{
+					title:'Afslag, Peter Sander', 
+					path:'./assets/pdf/Afslag_PeterSander.pdf'
+				}]
 		},
 		{
 			text: [	'<b>Kronik</b>',
 					'I kronikken ”Skal Carina og Robert på fattiggården” fra 2013, sammenligner museumsinspektør Nils Valdersdorf Jensen synet på fattigdom før og nu.'],
 			files: [
-				{title:'Skal Carina og Robert på fattiggården - kronik i Information 13. april 2013', path:'./assets/pdf/Carina-Robert-kronik-Information13.april2013.pdf'}]
+				{
+					title:'Skal Carina og Robert på fattiggården - kronik i Information 13. april 2013', 
+					path:'./assets/pdf/Carina-Robert-kronik-Information13.april2013.pdf'
+				}]
 		},
 		{
 			text: [	'<b>Skønlitteratur</b>',
