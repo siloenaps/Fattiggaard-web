@@ -5,10 +5,10 @@ module.exports = function() {
   	// Articles ----------------------------------------------------------------
 	var articles = [
 		{
-			text: [	'<b>Lorem ipsum dolor.</b>',
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quo sit placeat labore eligendi, iure eos sunt quae cupiditate nihil vel nobis saepe eaque! Labore nulla laboriosam voluptatem, nemo magni hic eum esse quam, velit sit impedit iste sequi similique commodi fuga repellat beatae aperiam.'],
-			files: [
-				{title:'Lorem ipsum.', path:'./assets/pdf/'}]
+			// text: [	'<b>Lorem ipsum dolor.</b>',
+			// 		'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quo sit placeat labore eligendi, iure eos sunt quae cupiditate nihil vel nobis saepe eaque! Labore nulla laboriosam voluptatem, nemo magni hic eum esse quam, velit sit impedit iste sequi similique commodi fuga repellat beatae aperiam.'],
+			// files: [
+			// 	{title:'Lorem ipsum.', path:'./assets/pdf/'}]
 		},
 	];
 
