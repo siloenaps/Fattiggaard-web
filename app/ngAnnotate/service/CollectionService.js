@@ -5,10 +5,13 @@ module.exports = function() {
   	// Articles ----------------------------------------------------------------
 	var articles = [
 		{
-			// text: [	'<b>Lorem ipsum dolor.</b>',
-			// 		'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quo sit placeat labore eligendi, iure eos sunt quae cupiditate nihil vel nobis saepe eaque! Labore nulla laboriosam voluptatem, nemo magni hic eum esse quam, velit sit impedit iste sequi similique commodi fuga repellat beatae aperiam.'],
-			// files: [
-			// 	{title:'Lorem ipsum.', path:'./assets/pdf/'}]
+			text: [	'I denne artikel kan du læse om tysklandsarbejderen Albert, der rejste til Tyskland fire gange under 2. verdenskrig. I Tyskland arbejdede han blandt andet på våbenfabrikken J.P. Sauer & Sohn i Suhl og som buschauffør i Berlin. Albert blev gentagne gange indlagt på Svendborg Fattiggård og Horsens Forsørgelsesanstalt under krigen.',],
+			files: [
+				{
+					title:'Albert', 
+					path:'./assets/pdf/Albert.pdf'
+				}
+			]
 		},
 	];
 
