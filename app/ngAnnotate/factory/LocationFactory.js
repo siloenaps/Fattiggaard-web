@@ -36,7 +36,10 @@ module.exports = function($location, $window, $route, MainmenuService, SidebarSe
 			$window.location.href = '#' + this.currentPath; // Set the '#' in honor of Safari
 			// console.log(item)
 			// Reload if the page is the game
-			if(MainmenuService.item.title.toLowerCase() === 'spil' || reload === true)	// Nb. "reload" forces page to reload. Used initial for stopping any media in game for playing when closed
+			// if(MainmenuService.item.title.toLowerCase() === 'spil' || reload === true)	// Nb. "reload" forces page to reload. Used initial for stopping any media in game for playing when closed
+			// 	$window.location.reload();
+
+			if(reload === true)	// Nb. "reload" forces page to reload. Used initial for stopping any media in game for playing when closed
 				$window.location.reload();
         },
     }
