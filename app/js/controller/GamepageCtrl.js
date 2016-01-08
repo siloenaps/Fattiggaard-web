@@ -29,9 +29,9 @@ module.exports = function($scope, angularLoad, GameService, MainmenuService, Loc
   loadNext(urls[index]);
 
   $scope.close = function() {
-    var item = MainmenuService.getItemByIndex(0);
+    var item = MainmenuService.getItemByIndex(0); // Frontpage
     MainmenuService.item = item;
-    LocationFactory.go(item);
+    LocationFactory.go(item, true); // Force frontpage to reload. Stops any media in game for playing when closed
   };
 
   // $scope.show = function() {

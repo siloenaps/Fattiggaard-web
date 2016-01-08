@@ -28,7 +28,7 @@ module.exports = function($location, $window, $route, MainmenuService, SidebarSe
     SidebarService.item = subitem;	
 
 	return {		
-        go: function (item) {
+        go: function (item, reload) {
             this.currentPath = item.path;
 
             MainmenuService.item = MainmenuService.getItemByType(item.type);		// Use the type to get the main item since the item can cover more than one path
@@ -36,7 +36,7 @@ module.exports = function($location, $window, $route, MainmenuService, SidebarSe
 			$window.location.href = '#' + this.currentPath; // Set the '#' in honor of Safari
 			// console.log(item)
 			// Reload if the page is the game
-			if(MainmenuService.item.title.toLowerCase() === 'spil')
+			if(MainmenuService.item.title.toLowerCase() === 'spil' || reload === true)	// Nb. "reload" forces page to reload. Used initial for stopping any media in game for playing when closed
 				$window.location.reload();
         },
     }
