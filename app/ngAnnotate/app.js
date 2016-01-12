@@ -9,9 +9,10 @@ require('angular-route');
 require('angular-load');
 require('angular-sanitize');
 require('gsap');
+require('angulartics');
 
 
-var app = angular.module('webApp', [ 'angularLoad', 'ngRoute', 'ngSanitize']);
+var app = angular.module('webApp', [ 'angularLoad', 'ngRoute', 'ngSanitize', 'angulartics', require('angulartics-google-analytics')]);
 
 app.constant('VERSION', require('../../package.json').version);
 
