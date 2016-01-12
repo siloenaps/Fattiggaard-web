@@ -105,7 +105,7 @@ gulp.task( 'deploy-live', ['build'], function () {
     } );
  
     var globs = [
-        // paths.root + 'index.html',
+        paths.root + 'index.html',
         paths.views + '**/*',
         paths.dist + '**/*',
         paths.css + '**/*',
