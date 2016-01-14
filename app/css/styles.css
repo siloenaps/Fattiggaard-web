@@ -225,13 +225,24 @@ button {
 
 .guide {
   padding: 0 49px 0 49px; }
-  .guide .list {
-    margin-top: 30px;
-    margin-left: 2px; }
+  .guide .list .text-container {
+    margin-bottom: 15px; }
+  .guide .list .item {
+    margin: 0 0 25px 0; }
     .guide .list .item img {
-      margin-right: 10px; }
-    .guide .list .item:hover {
-      cursor: pointer; }
+      margin: 0;
+      padding: 0; }
+    .guide .list .item .title {
+      margin: 10px 0 0 -15px; }
+    .guide .list .item .description {
+      margin: 0 0 0 10px; }
+    .guide .list .item .file {
+      margin: 0 0 0 5px; }
+    .guide .list .item .link:hover {
+      color: #c5463e;
+      text-decoration: inherit; }
+  .guide .list .item:hover {
+    cursor: pointer; }
 
 .collection {
   padding: 0 49px 0 49px; }

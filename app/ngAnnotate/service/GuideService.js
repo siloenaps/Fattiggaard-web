@@ -3,26 +3,20 @@
 module.exports = function() {
   this.item = undefined;
 
-  var items = [{
-    title: 'Lærervejledning',
-    text: '',
-    path: './assets/pdf/test.pdf'
-  },
-  {
-    title: 'Prøveoplæg',
-    text: '',
-    path: './assets/pdf/'
-  },
-  {
-    title: 'Undervisningsforløb 1',
-    text: '',
-    path: './assets/pdf/forside'
-  },
-  {
-    title: 'Undervisningsforløb 2',
-    text: '',
-    path: './assets/pdf/forside'
-  }];
+  var items = [
+    {
+      text: [
+        '<b>Lærervejledning</b>',
+        'Her finder du lærervejledning til dilemmaspillet, forslag til et undervisningsforløb til historie med spillet som omdrejningspunkt og et eksempel på inddragelse af dilemmaspillet i historieprøven. Derudover finder du skemaer med bud på, hvilke læringsmål spillet understøtter i fagene historie, samfundsfag, dansk og kristendomskundskab.'
+        ],
+      files: [
+        {
+          title:'Hent lærervejledning', 
+          path:'./assets/pdf/Lærervejledning-FattiggårdEllerFjendeland.pdf'
+        }]
+    },
+
+  ];
 
   this.getItems = function() {
     return items;

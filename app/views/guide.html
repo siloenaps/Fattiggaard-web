@@ -1,16 +1,39 @@
 <div class="guide">
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-xs-12">
       Vi er på vej med indholdet til denne her side. 
-        <!-- Her finder du lærervejledning til dilemmaspillet, forslag til et undervisningsforløb til historie med spillet som omdrejningspunkt inklusive bud på tilknyttede læringsmål og bevægelse i undervisningen. Du finder også et eksempel på inddragelse af dilemmaspillet i historieprøven.   -->
+        Her finder du lærervejledning til dilemmaspillet, forslag til et undervisningsforløb til historie med spillet som omdrejningspunkt inklusive bud på tilknyttede læringsmål og bevægelse i undervisningen. Du finder også et eksempel på inddragelse af dilemmaspillet i historieprøven.  
       </div>      
-    </div>
-    <div class="row list">
+    </div> -->
+<!--     <div class="row list">
         <div class="col-xs-12">            
-            <!-- <div ng-repeat="item in getItems()" ng-click="select(item)" class="item">
+            <div ng-repeat="item in getItems()" ng-click="select(item)" class="item">
                 <img src="./assets/images/pdf-logo.png" alt="">
                 {{item.title}}
-            </div> -->
+            </div>
+        </div>
+    </div> -->
+    <div class="row list">
+        <div class="col-xs-12">
+          <!-- Source block -->
+          <div ng-repeat="item in getItems()" class="item">
+            <div class="row text-container">
+              <div class="col-xs-12">
+                <!-- Text -->
+                <div ng-repeat="txt in item.text">
+                  <span ng-bind-html="txt"></span>
+                </div>
+              </div>
+            </div>  
+            <!-- Files -->
+            <div ng-repeat="file in item.files" ng-click="select(file)" class="row file link">
+              <div class="col-xs-1">
+                <img src="./assets/images/pdf-logo.png" alt="">
+              </div>
+              <div class="col-xs-11">
+                <div class="title">{{file.title}}</div>
+              </div>
+            </div>                        
         </div>
     </div>
 </div>
