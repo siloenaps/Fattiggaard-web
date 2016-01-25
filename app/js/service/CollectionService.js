@@ -13,6 +13,17 @@ module.exports = function() {
 				}
 			]
 		},
+		{
+			text: [	
+					'<b>Hvis situationen ændrer sig i morgen – Jødeforfølgelser i 30&rsquo;ernes Nazityskland</b>',
+					'I artiklen kan man læse om en række af de uretfærdigheder, som de tyske jøder blev udsat for i 30&rsquo;ernes Tyskland samt om deres reaktioner på disse uretfærdigheder. Læs om den boykot, der kort efter Hitlers udnævnelse til Rigskansler blev udført af SA og SS, om Nürnberglovene og Krystalnatten.',],
+			files: [
+				{
+					title:'Hvis situationen ændrer sig i morgen', 
+					path:'./assets/pdf/Hvis-situationen-ændrer-sig-i-morgen_Jødeforfølgelser-i-30ernes-Nazityskland.pdf'
+				}
+			]
+		},
 	];
 
 	this.getArticles = function() {
@@ -109,11 +120,27 @@ module.exports = function() {
 				}]
 		},
 		{
-			text: [	'<b>Skønlitteratur</b>',
-					'&#34;Frydenholm&#34; af Hans Scherfig er en delvist dokumentarisk roman om Danmark under besættelsen 1940-45. Uddraget handler om tysklandsarbejde, og er et eksempel på, hvordan tysklandsarbejde og dem der hvervede sig til det, blev opfattet i lokalsamfundene.',
-					'<br/>',
-					'&#34;Planen&#34; af Morten Pape er en delvist dokumentarisk roman baseret på forfatterens egen opvækst i Urbanplanen på Amager. Den handler, blandt meget andet, om at have store drømme og ambitioner under umulige vilkår. I uddraget diskuterer romanens hovedperson 2. verdenskrig med en nær ven med somaliske rødder.'],
-			files: []
+			text: 	[	
+						'<b>Skønlitteratur</b>',
+						'&#34;Frydenholm&#34; af Hans Scherfig er en delvist dokumentarisk roman om Danmark under besættelsen 1940-45. Romanuddraget handler om tysklandsarbejde, og er et eksempel på, hvordan tysklandsarbejde og dem der hvervede sig til det, blev opfattet i lokalsamfundene. Frydenholm er udgivet af Gyldendal, første gang i 1962.'
+					],
+			files: 	[
+						{
+							title:'Hans Scherfig, Frydenholm', 
+							path:'./assets/pdf/Hans-Scherfig_Frydenholm.pdf'
+						}
+					]
+		},
+		{
+			text: 	[	
+						'&#34;Planen&#34; af Morten Pape er en delvist dokumentarisk roman baseret på forfatterens egen opvækst i Urbanplanen på Amager. en handler, blandt meget andet, om at have store drømme og ambitioner under svære vilkår. I uddraget diskuterer romanens hovedperson 2. verdenskrig med en nær ven med somaliske rødder. ”Planen” er udgivet af Politikens Forlag i 2015.'
+					],
+			files: 	[
+						{
+							title:'Morten Pape, Planen', 
+							path:'./assets/pdf/Morten-Pape_Planen.pdf'
+						}
+					]
 		},
 	];
 
