@@ -5,7 +5,8 @@ module.exports = function() {
   	// Articles ----------------------------------------------------------------
 	var articles = [
 		{
-			text: [	'I denne artikel kan du læse om tysklandsarbejderen Albert, der rejste til Tyskland fire gange under 2. verdenskrig. I Tyskland arbejdede han blandt andet på våbenfabrikken J.P. Sauer & Sohn i Suhl og som buschauffør i Berlin. Albert blev gentagne gange indlagt på Svendborg Fattiggård og Horsens Forsørgelsesanstalt under krigen.',],
+			text: [	'<b>Albert</b>',
+					'I denne artikel kan du læse om tysklandsarbejderen Albert, der rejste til Tyskland fire gange under 2. verdenskrig. I Tyskland arbejdede han blandt andet på våbenfabrikken J.P. Sauer & Sohn i Suhl og som buschauffør i Berlin. Albert blev gentagne gange indlagt på Svendborg Fattiggård og Horsens Forsørgelsesanstalt under krigen.',],
 			files: [
 				{
 					title:'Albert', 
@@ -21,6 +22,28 @@ module.exports = function() {
 				{
 					title:'Hvis situationen ændrer sig i morgen', 
 					path:'./assets/pdf/Hvis-situationen-ændrer-sig-i-morgen_Jødeforfølgelser-i-30ernes-Nazityskland.pdf'
+				}
+			]
+		},
+		{
+			text: [	
+					'<b>Tysklandsarbejde</b>',
+					'I denne artikel kan du bl.a. læse om baggrunden for tysklandsarbejde, hvorfor mange danskere lod sig hverve til arbejdet, om forholdende i Tyskland og om hvorfor mange tysklandsarbejdere helst ikke talte om, at de havde været afsted.'],
+			files: [
+				{
+					title:'Tysklandsarbejde', 
+					path:'./assets/pdf/Tysklandsarbejde.pdf'
+				}
+			]
+		},
+		{
+			text: [	
+					'<b>Fattigdomssyn i besættelsestidens Danmark</b>',
+					'I denne artikel kan du læse lidt om den sociallovgivning, der var gældende i Danmark under besættelsen, hvilket fattigdomssyn den var udtryk for og om hvilke konsekvenser det havde at blive indlagt på en fattiggård eller arbejdsanstalt på denne tid.'],
+			files: [
+				{
+					title:'Fattigdomssyn i besættelsestidens Danmark', 
+					path:'./assets/pdf/Fattigdomssyn-i-besættelsestidens-Danmark.pdf'
 				}
 			]
 		},
