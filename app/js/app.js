@@ -68,7 +68,7 @@ app.config(function($routeProvider, $locationProvider, $sceDelegateProvider) {
   })
   .when('/om-projektet', {
     templateUrl: 'views/about.html',
-    controller: '',
+    controller: 'AboutCtrl',
   })
   .otherwise({
     redirectTo: '/',

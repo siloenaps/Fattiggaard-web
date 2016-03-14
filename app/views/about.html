@@ -10,8 +10,37 @@
             I spillet kan man blive indlagt og indespærret på tre forskellige anstalter: Svendborg Fattiggård, Arbejdsanstalten Sundholm og Horsens Forsørgelsesanstalt. Svendborg Fattiggård eksisterer den dag i dag og huser nu Forsorgsmuseet. Der er altså her en unik mulighed for at komme ind og se det sted, hvor en stor del af de historiske begivenheder har udspillet sig og få et indblik i livet og hverdagen, under pigtråd, på en fattiganstalt. Arbejdsanstalten Sundholm ligger på Amager. Det er ikke længere en arbejdsanstalt, men huser i dag Aktivitetscenter Sundholm, Herberget, Sundhedsteam, Klinikken og Bocentret og har fortsat socialt udsatte som målgruppe. Det er muligt at besøge Sundholm efter aftale. Horsens Forsørgelsesanstalt blev revet ned i 1950’erne, men et besøg på Fængselsmuseet i Horsens kan anbefales som eksempel på en institution, der har meget til fælles med arbejdsanstalter/fattiggårde.
             <br /><br />
             Fattiggård eller fjendeland har haft tilknyttet følgeforskning, der har undersøgt det konkrete projektets samarbejdsrelationer mellem museet, skolerne og kommunen.  Forsorgsmuseet har i projektet haft et dobbeltstrenget samarbejde med skolerne i form af en lærer ansat som undervisningskonsulent på museet en dag om ugen til projektet samt i form af lærere til tyve udskolingsklasser fra Svendborg kommune, som testede museets produkt. For iværksættelse af disse samarbejder og videndeling af projektet har museet samarbejdet med skoleledere og skolechefen i kommunen. Undersøgelsen har set på disse forskellige roller og niveauer i samarbejdet samt dets kommunikationsveje. Historielab har forestået følgeforskningen og skrevet en rapport på baggrund af den. Rapporten finder du her på siden.
-            <br /><br />             
             <br /><br />
+        </div>
+    </div>
+
+    <div class="row list">
+        <div class="col-xs-12">
+            <!-- Source block -->
+            <div ng-repeat="item in getDocuments()" class="item">
+                <div class="row text-container">
+                  <div class="col-xs-12">
+                    <!-- Text -->
+                    <div ng-repeat="txt in item.text">
+                      <span ng-bind-html="txt"></span>
+                    </div>
+                  </div>
+                </div>  
+                <!-- Files -->
+                <div ng-repeat="file in item.files" ng-click="select(file)" class="row file link">
+                  <div class="col-xs-1">
+                    <img src="./assets/images/pdf-logo.png" alt="">
+                  </div>
+                  <div class="col-xs-11">
+                    <div class="title">{{file.title}}</div>
+                  </div>
+                </div>  
+            </div>                      
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
             Projektansvarlig, forskning og manuskript: Jeppe Wichmann Rasmussen, Forsorgsmuseet
             <br /><br />
             Undervisningskonsulent: Ulrik Vestergaard Jensen, Rantzausminde Skole
@@ -29,6 +58,8 @@
             <br /><br />
             Projektet er støttet af Kulturstyrelsen.
         </div>
+    </div>
+
     <div class="row">
         <div class="col-xs-12 logo">
             <img src="./assets/images/logo_kulturstyrelsen.png" alt="">
